@@ -1,1 +1,1 @@
-# RecurringCredit (Recurrd)
+# RecurringCredit
