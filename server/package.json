@@ -1,7 +1,7 @@
 {
   "name": "recurringcredit",
   "version": "1.0.0",
-  "description": "RecurringCredit with Stripe subscription billing charging",
+  "description": "Recurring subscription for your credit cards",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
