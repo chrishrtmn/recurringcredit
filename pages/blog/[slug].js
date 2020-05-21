@@ -59,9 +59,9 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
 }
 
 export async function getStaticProps({ ...ctx }) {
-  const { postname } = ctx.params
+  const { slug } = ctx.params
 
-  const content = await import(`../../posts/${postname}.md`)
+  const content = await import(`../../posts/${slug}.md`)
   const config = await import(`../../siteconfig.json`)
   const data = matter(content.default)
 

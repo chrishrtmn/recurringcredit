@@ -1,8 +1,10 @@
 import Layout from '../components/layout'
+import Hero from '../components/hero'
 
 const Index = ({ title, description, ...props }) => {
   return (
     <>
+      <Hero />>
       <Layout pageTitle={title} description={description}>
         <p className='description'>
           This is a simple blog built with Next, easily deployable on{' '}

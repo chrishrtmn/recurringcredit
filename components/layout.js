@@ -1,7 +1,6 @@
 import Head from 'next/head'
 
 import Header from './header'
-import Hero from './hero'
 
 export default function Layout({ children, pageTitle, ...props }) {
   return (
@@ -13,8 +12,6 @@ export default function Layout({ children, pageTitle, ...props }) {
 
       <section className='layout'>
         <Header />
-        <Hero />
-
         <div className='content'>{children}</div>
       </section>
 
