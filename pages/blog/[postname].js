@@ -2,7 +2,8 @@ import Link from 'next/link'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 
-import Layout from '../../components/Layout'
+import Layout from '../../components/layout'
+
 import getSlugs from '../../utils/getSlugs'
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
@@ -13,7 +14,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
       <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
         <div className='back'>
           ←{' '}
-          <Link href='/'>
+          <Link href='/blog'>
             <a>Back to Blog</a>
           </Link>
         </div>
@@ -24,6 +25,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
               src={frontmatter.hero_image}
               className='hero'
               alt={frontmatter.title}
+              loading='lazy'
             />
           )}
           <div>
@@ -31,6 +33,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           </div>
         </article>
       </Layout>
+
       <style jsx>{`
         article {
           width: 100%;
