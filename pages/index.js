@@ -1,10 +1,11 @@
 import Layout from '../components/layout'
 import Hero from '../components/hero'
+import Head from 'next/head'
 
 const Index = ({ title, description, ...props }) => {
   return (
     <>
-      <Hero />>
+      <Hero />
       <Layout pageTitle={title} description={description}>
         <p className='description'>
           This is a simple blog built with Next, easily deployable on{' '}
@@ -20,7 +21,9 @@ const Index = ({ title, description, ...props }) => {
           <a href='https://url.netlify.com/ByVW0bCF8'>here</a>.
         </p>
       </Layout>
-      <style jsx>{``}</style>
+      <Head>
+        <script src='https://js.stripe.com/v3/'></script>
+      </Head>
     </>
   )
 }

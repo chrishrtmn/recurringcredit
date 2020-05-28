@@ -1,11 +1,13 @@
 import Link from 'next/link'
 
+import styles from '../styles/regions/header.module.scss'
+
 export default function Header() {
   return (
     <>
-      <header className='header'>
-        <Link href='/' className='logo'>
-          <a>RecurringCredit</a>
+      <header className={styles.header}>
+        <Link href='/'>
+          <a className='logo'>RecurringCredit</a>
         </Link>
         <nav className='nav'>
           <Link href='/about'>
@@ -17,8 +19,8 @@ export default function Header() {
           <Link href='/contact'>
             <a>Contact</a>
           </Link>
-          <Link href='/portal' className='portal'>
-            <a>Log In</a>
+          <Link href='/portal'>
+            <a className='portal'>Log In</a>
           </Link>
         </nav>
       </header>
