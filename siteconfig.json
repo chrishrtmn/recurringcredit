@@ -1,4 +1,6 @@
 {
   "title": "RecurringCredit",
-  "description": "Prevent credit card inactivity"
+  "description": "Prevent credit card inactivity",
+  "descriptionAbout": "About",
+  "descriptionBlog": "Blog"
 }

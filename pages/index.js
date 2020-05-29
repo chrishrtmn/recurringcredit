@@ -1,8 +1,7 @@
 import Layout from '../components/layout'
 import Hero from '../components/hero'
-import Head from 'next/head'
 
-const Index = ({ title, description, ...props }) => {
+export default function Index({ title, description, ...props }) {
   return (
     <>
       <Hero />
@@ -21,14 +20,9 @@ const Index = ({ title, description, ...props }) => {
           <a href='https://url.netlify.com/ByVW0bCF8'>here</a>.
         </p>
       </Layout>
-      <Head>
-        <script src='https://js.stripe.com/v3/'></script>
-      </Head>
     </>
   )
 }
-
-export default Index
 
 export async function getStaticProps() {
   const configData = await import(`../siteconfig.json`)

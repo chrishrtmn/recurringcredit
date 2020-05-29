@@ -10,6 +10,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <script src='https://js.stripe.com/v3/'></script>
           <script src='https://getinsights.io/static/js/insights.js'></script>
           <script
             dangerouslySetInnerHTML={{

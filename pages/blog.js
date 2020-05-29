@@ -42,7 +42,7 @@ export async function getStaticProps() {
     props: {
       posts,
       title: configData.default.title,
-      description: configData.default.description,
+      description: configData.default.descriptionBlog,
     },
   }
 }

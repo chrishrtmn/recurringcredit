@@ -6,8 +6,8 @@ export default function Layout({ children, pageTitle, description, ...props }) {
   return (
     <>
       <Head>
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <title>
+          {/* <title> should be less than 55 characters for SEO */}
           {description} | {pageTitle}
         </title>
       </Head>
@@ -15,9 +15,9 @@ export default function Layout({ children, pageTitle, description, ...props }) {
       <section className='layout'>
         <Header />
         <div className='content'>{children}</div>
-      </section>
 
-      <footer>Built by me!</footer>
+        <footer>Built by me!</footer>
+      </section>
     </>
   )
 }
