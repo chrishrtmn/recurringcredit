@@ -11,10 +11,14 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <script src='https://getinsights.io/static/js/insights.js'></script>
-          <script>
-            insights.init('{process.env.INSIGHT_TRACKING_ID}');
-            insights.trackPages();
-          </script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                insights.init('${process.env.INSIGHT_TRACKING_ID}');
+                insights.trackPages();
+              `,
+            }}
+          />
         </Head>
         <body>
           <Main />

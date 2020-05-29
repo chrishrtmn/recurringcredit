@@ -8,7 +8,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <title>
-          {pageTitle} | {description}
+          {description} | {pageTitle}
         </title>
       </Head>
 
