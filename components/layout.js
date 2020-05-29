@@ -10,6 +10,11 @@ export default function Layout({ children, pageTitle, description, ...props }) {
         <title>
           {pageTitle} | {description}
         </title>
+        <script src='https://getinsights.io/static/js/insights.js'></script>
+        <script>
+          insights.init({process.env.INSIGHT_TRACKING_ID});
+          insights.trackPages();
+        </script>
       </Head>
 
       <section className='layout'>
