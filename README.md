@@ -2,7 +2,7 @@
 
 Using Next.js framework for a static site with a blog
 
-https://github.com/cassidoo/next-netlify-blog-starter
+EG: https://github.com/cassidoo/next-netlify-blog-starter
 
 Run the development server:
 
