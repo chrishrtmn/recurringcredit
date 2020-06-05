@@ -1,12 +1,12 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
+import * as gtag from '../lib/analytics'
 import '../styles/main.scss'
-import { getPageFiles } from 'next/dist/next-server/server/get-page-files'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const handleRouteChange = (url) => {
-      getPageFiles.pageview(url)
+      gtag.pageview(url)
     }
     Router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
