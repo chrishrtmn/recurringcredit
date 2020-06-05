@@ -1,12 +1,12 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
-import { pageview as gtag } from '../lib/analytics'
+import { trackPageView } from '../lib/analytics-ga'
 import '../styles/main.scss'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const handleRouteChange = (url) => {
-      gtag.pageview(url)
+      trackPageView(url)
     }
     Router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
