@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
-import * as gtag from '../lib/analytics'
+import { pageview as gtag } from '../lib/analytics'
 import '../styles/main.scss'
 
 function MyApp({ Component, pageProps }) {
