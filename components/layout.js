@@ -1,6 +1,12 @@
 import Head from 'next/head'
-
 import Header from './header'
+{
+  /*
+import absoluteUrl from '../utils/absolute-url'
+
+const { origin } = absoluteUrl(req, 'localhost:3000')
+  */
+}
 
 export default function Layout({ children, pageTitle, description, ...props }) {
   return (
@@ -15,6 +21,8 @@ export default function Layout({ children, pageTitle, description, ...props }) {
       <section className='layout'>
         <Header />
         <div className='content'>{children}</div>
+
+        <button role='link'>Subscribe</button>
 
         <footer>Built by me!</footer>
       </section>

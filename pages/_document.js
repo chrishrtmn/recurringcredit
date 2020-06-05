@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps }
@@ -10,7 +10,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script src='https://js.stripe.com/v3/'></script>
           <script src='https://getinsights.io/static/js/insights.js'></script>
           <script
             dangerouslySetInnerHTML={{
@@ -18,6 +17,20 @@ export default class MyDocument extends Document {
                 insights.init('${process.env.INSIGHT_TRACKING_ID}');
                 insights.trackPages();
               `,
+            }}
+          />
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.GA_TRACKING_ID}');
+            `,
             }}
           />
         </Head>
@@ -29,3 +42,5 @@ export default class MyDocument extends Document {
     )
   }
 }
+
+export default MyDocument
