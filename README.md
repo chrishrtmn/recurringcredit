@@ -14,11 +14,11 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ## Pre-launch to-do list
 
-- Finish Stripe.js integration
 - Finish home page styling
 
 ## Post-launch to-do list
 
+- Convert to client + server integration for further customizations
 - Subscribe to newsletter form/section
 - Add Blog link + Posts
 - Add About page?

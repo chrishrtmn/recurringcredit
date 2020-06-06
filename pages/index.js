@@ -1,4 +1,5 @@
 import Layout from '../components/layout'
+import stripeHandleClick from '../lib/stripe-handle-click'
 import Hero from '../components/hero'
 
 export default function Index({ title, description, ...props }) {
@@ -6,19 +7,11 @@ export default function Index({ title, description, ...props }) {
     <>
       <Hero />
       <Layout pageTitle={title} description={description}>
-        <p className='description'>
-          This is a simple blog built with Next, easily deployable on
-          <a href='https://url.netlify.com/r1j6ybSYU'>Netlify</a>.
-        </p>
         <main>This is the home page</main>
-        <p>
-          You can look at the repository for this project
-          <a href='https://github.com/cassidoo/next-netlify-blog-starter'>
-            here
-          </a>
-          , and a tutorial on how to build it
-          <a href='https://url.netlify.com/ByVW0bCF8'>here</a>.
-        </p>
+        <footer>
+          <div>This is the ROOT_URL: {process.env.NEXT_PUBLIC_ROOT_URL}</div>
+          <button onClick={stripeHandleClick}>STRIPE BUTTON</button>
+        </footer>
       </Layout>
     </>
   )

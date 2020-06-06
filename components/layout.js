@@ -14,12 +14,6 @@ export default function Layout({ children, pageTitle, description, ...props }) {
       <section className='layout'>
         <Header />
         <div className='content'>{children}</div>
-
-        <button role='link'>Subscribe</button>
-
-        <footer>Built by me!</footer>
-
-        <div>{process.env.NEXT_PUBLIC_ROOT_URL}</div>
       </section>
     </>
   )
