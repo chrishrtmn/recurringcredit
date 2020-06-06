@@ -1,7 +1,4 @@
 module.exports = {
-  env: {
-    VERCEL_URL: 'http://localhost:3000',
-  },
   target: 'serverless',
   poweredByHeader: false,
   webpack: function (config) {
