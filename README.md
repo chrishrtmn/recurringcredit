@@ -1,13 +1,19 @@
 # RecurringCredit
 
-Using Next.js framework for a static site with a blog
+- React.js
+- Next.js
+- Stripe.js
 
-EG: https://github.com/cassidoo/next-netlify-blog-starter
+## To-do list
 
-Run the development server:
+- Add 'next-absolute-url' for Stripe.js env variables
+- Finish Stripe.js integration
+- Add Google Analytics
+
+## To run locally
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000)
