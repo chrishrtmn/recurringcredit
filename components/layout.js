@@ -19,7 +19,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
 
         <footer>Built by me!</footer>
 
-        <div>{process.env.VERCEL_URL}</div>
+        <div>{process.env.NEXT_PUBLIC_ROOT_URL}</div>
       </section>
     </>
   )
