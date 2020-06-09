@@ -18,9 +18,11 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ## Post-launch to-do list
 
-- Convert to client + server integration for further customizations
+- Update "last updated" dates on Legal pages upon launch
 - Subscribe to newsletter form/section
 - Add Blog link + Posts
 - Add About page?
 - Add Google Analytics
-- Add 'next-absolute-url' for Stripe.js env variables?
+- Convert Stripe to client + server integration
+  - Customer Portal
+  - Enhanced styling options

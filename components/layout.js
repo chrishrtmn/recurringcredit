@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from './header'
+import Footer from './footer'
 
 export default function Layout({ children, pageTitle, description, ...props }) {
   return (
@@ -14,6 +15,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
       <section className='layout'>
         <Header />
         <div className='content'>{children}</div>
+        <Footer />
       </section>
     </>
   )

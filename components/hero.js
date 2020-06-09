@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import stripeHandleClick from '../lib/stripe-handle-click'
 
 export default function Hero() {
   return (
@@ -11,10 +12,10 @@ export default function Hero() {
             Start a recurring subscription to keep your credit cards active and
             your credit history intact.
           </h2>
-          <a href='#stripe' className='button-fill'>
-            Add credit card
-          </a>
-          <Link href='/about'>
+          <button className='button-fill' onClick={stripeHandleClick}>
+            Add Credit Card
+          </button>
+          <Link href='#about'>
             <a className='button-border'>Learn more</a>
           </Link>
         </div>
