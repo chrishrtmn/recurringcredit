@@ -7,8 +7,8 @@ export default function Footer() {
     <>
       <footer className='footer'>
         <span className='copyright'>
-          &copy; <span class='date-year'>{dateYear}</span> RecurringCredit. All
-          rights reserved.
+          &copy; <span className='date-year'>{dateYear}</span> RecurringCredit.
+          All rights reserved.
         </span>
         <br />
         <span className='legal-links'>

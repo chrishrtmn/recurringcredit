@@ -10,7 +10,6 @@ export default function Index({ title, description, ...props }) {
           <p>This is the home page</p>
           <p>Lorem ipsum.</p>
           <div id='about'>This is the about section.</div>
-          <p>Lorem ipsum.</p>
         </main>
       </Layout>
     </>
