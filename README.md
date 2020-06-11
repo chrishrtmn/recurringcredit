@@ -22,7 +22,6 @@ Visit [http://localhost:3000](http://localhost:3000)
 - Subscribe to newsletter form/section
 - Add Blog link + Posts
 - Add About page?
-- Add Google Analytics
 - Convert Stripe to client + server integration
   - Customer Portal
   - Enhanced styling options

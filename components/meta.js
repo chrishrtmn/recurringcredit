@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { CMS_NAME, CMS_URL } from '@/lib/constants'
+//import Head from 'next/head'
+//import { CMS_NAME, CMS_URL } from '@/lib/constants'
 
 {
   /*export default function Meta() {
