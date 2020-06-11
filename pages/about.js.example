@@ -1,10 +1,14 @@
 import Layout from '../components/layout'
+import Header from '../components/header'
 
 const About = ({ title, description, ...props }) => {
   return (
     <>
       <Layout pageTitle={title} description={description}>
-        <p>This is the about page</p>
+        <Header />
+        <main>
+          <p>This is the about page</p>
+        </main>
       </Layout>
     </>
   )

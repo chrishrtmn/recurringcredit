@@ -5,7 +5,7 @@ import styles from '../styles/regions/header.module.scss'
 export default function Header() {
   return (
     <>
-      <header className={styles.header}>
+      <header className='header'>
         <Link href='/'>
           <a className='logo'>RecurringCredit</a>
         </Link>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import Layout from '../../components/layout'
+import Header from '../components/header'
 import getSlugs from '../../lib/get-slugs'
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
@@ -10,6 +11,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   return (
     <>
       <Layout pageTitle={siteTitle} description={frontmatter.title}>
+        <Header />
         <div className='back'>
           ←{' '}
           <Link href='/blog'>

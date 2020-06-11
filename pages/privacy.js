@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Hero from '../components/hero'
+import Header from '../components/header'
 
 export default function Privacy({ title, description, ...props }) {
   return (
     <>
       <Layout pageTitle={title} description={description}>
+        <Header />
         <main>
           <h1>Welcome to our Privacy Policy</h1>
           <h3>Your privacy is critically important to us.</h3>

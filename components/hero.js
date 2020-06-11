@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Header from './header'
 import stripeHandleClick from '../lib/stripe-handle-click'
 
 export default function Hero() {
@@ -6,6 +7,7 @@ export default function Hero() {
     <>
       <div className='hero'>
         <div className='background'></div>
+        <Header />
         <div className='content'>
           <h1 className='title'>Prevent credit card inactivity.</h1>
           <h2>

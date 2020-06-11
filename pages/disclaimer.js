@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Hero from '../components/hero'
+import Header from '../components/header'
 
 export default function Disclaimer({ title, description, ...props }) {
   return (
     <>
       <Layout pageTitle={title} description={description}>
+        <Header />
         <main>
           <h1>RecurringCredit Disclaimer</h1>
           <h2>Consent</h2>

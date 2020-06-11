@@ -1,4 +1,5 @@
 import Layout from '../components/layout'
+import Header from '../components/header'
 import PostList from '../components/post-list'
 import getPosts from '../lib/get-posts'
 
@@ -6,8 +7,9 @@ const Index = ({ posts, title, description, ...props }) => {
   return (
     <>
       <Layout pageTitle={title} description={description}>
-        <h1 className='title'>Blog</h1>
+        <Header />
         <main>
+          <h1 className='title'>Blog</h1>
           <PostList posts={posts} />
         </main>
       </Layout>

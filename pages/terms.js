@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Hero from '../components/hero'
+import Header from '../components/header'
 
 export default function Terms({ title, description, ...props }) {
   return (
     <>
       <Layout pageTitle={title} description={description}>
+        <Header />
         <main>
           <h2>Welcome to RecurringCredit</h2>
           <p>
