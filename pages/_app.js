@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
-import * as gtag from '../lib/gtag'
+import * as gtag from '../lib/metrics-gtag'
 
 import '../styles/main.scss'
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url)
@@ -17,5 +17,3 @@ function MyApp({ Component, pageProps }) {
 
   return <Component {...pageProps} />
 }
-
-export default MyApp
