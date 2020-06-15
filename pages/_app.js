@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import Router from 'next/router'
 import * as gtag from '../lib/metrics-google-analytics'
 
-import '../styles/main.scss'
+import '../styles/reset.scss'
 
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {

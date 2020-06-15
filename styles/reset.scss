@@ -1,17 +1,17 @@
-/* Box sizing rules */
+// Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default padding */
+// Remove default padding
 ul[class],
 ol[class] {
   padding: 0;
 }
 
-/* Remove default margin */
+// Remove default margin
 body,
 h1,
 h2,

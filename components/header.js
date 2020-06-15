@@ -1,31 +1,27 @@
-import Link from 'next/link'
-import stripeHandleClick from '../lib/stripe-handle-click'
-import styles from '../styles/regions/header.module.scss'
+import Logo from './logo'
+import Nav from './nav'
 
 export default function Header() {
   return (
     <>
-      <header className='header'>
-        <Link href='/'>
-          <a className='logo'>RecurringCredit</a>
-        </Link>
+      <header>
+        <div className='wrapper'>
+          <Logo />
 
-        <nav className='nav'>
-          {/*
-          <Link href='/about'>
-            <a>About</a>
-          </Link>
-          <Link href='/blog'>
-            <a>Blog</a>
-          </Link>*/}
-
-          <Link href='/contact'>
-            <a>Contact</a>
-          </Link>
-
-          <a onClick={stripeHandleClick}>Add Credit Card</a>
-        </nav>
+          <Nav />
+        </div>
       </header>
+
+      <style jsx>{`
+        header {
+          position: relative;
+          color: #fff;
+        }
+
+        a {
+          color: #fff;
+        }
+      `}</style>
     </>
   )
 }
