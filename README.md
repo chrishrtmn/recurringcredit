@@ -15,13 +15,14 @@ Visit [http://localhost:3000](http://localhost:3000)
 ## Pre-launch to-do list
 
 - Finish home page styling
+- Contact page/form
+- Subscribe to newsletter form/section
+- Update "last updated" dates on Legal pages upon launch
 
 ## Post-launch to-do list
 
-- Update "last updated" dates on Legal pages upon launch
-- Subscribe to newsletter form/section
 - Add Blog link + Posts
-- Add About page?
+- Add About page
 - Convert Stripe to client + server integration
   - Customer Portal
   - Enhanced styling options

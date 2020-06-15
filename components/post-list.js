@@ -6,6 +6,7 @@ export default function PostList({ posts }) {
   return (
     <div>
       {!posts && <div>No posts!</div>}
+
       <ul>
         {posts &&
           posts.map((post) => {

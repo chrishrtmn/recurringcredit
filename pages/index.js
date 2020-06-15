@@ -6,11 +6,19 @@ export default function Index({ title, description, ...props }) {
     <>
       <Layout pageTitle={title} description={description}>
         <Hero />
+
         <main>
           <p>This is the home page</p>
+
           <p>Lorem ipsum.</p>
+
           <div id='about'>This is the about section.</div>
         </main>
+        <style jsx>{`
+          main > p:first-of-type {
+            font-family: 'Roboto', sans-serif;
+          }
+        `}</style>
       </Layout>
     </>
   )

@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
-import * as gtag from '../lib/metrics-gtag'
+import * as gtag from '../lib/metrics-google-analytics'
 
 import '../styles/main.scss'
 

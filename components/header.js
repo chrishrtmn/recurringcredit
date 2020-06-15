@@ -9,6 +9,7 @@ export default function Header() {
         <Link href='/'>
           <a className='logo'>RecurringCredit</a>
         </Link>
+
         <nav className='nav'>
           {/*
           <Link href='/about'>
@@ -17,9 +18,11 @@ export default function Header() {
           <Link href='/blog'>
             <a>Blog</a>
           </Link>*/}
+
           <Link href='/contact'>
             <a>Contact</a>
           </Link>
+
           <a onClick={stripeHandleClick}>Add Credit Card</a>
         </nav>
       </header>

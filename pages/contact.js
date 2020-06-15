@@ -7,6 +7,7 @@ export default function Contact({ title, description, ...props }) {
     <>
       <Layout pageTitle={title} description={description}>
         <Header />
+
         <main>
           This is the Contact page. Return{' '}
           <Link href='/'>

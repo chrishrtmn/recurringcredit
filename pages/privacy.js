@@ -7,6 +7,7 @@ export default function Privacy({ title, description, ...props }) {
     <>
       <Layout pageTitle={title} description={description}>
         <Header />
+
         <main>
           <h1>Welcome to our Privacy Policy</h1>
           <h3>Your privacy is critically important to us.</h3>

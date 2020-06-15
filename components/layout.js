@@ -14,10 +14,9 @@ export default function Layout({ children, pageTitle, description, ...props }) {
         <HeadTags />
       </Head>
 
-      <section className='layout'>
-        <div className='content'>{children}</div>
-        <Footer />
-      </section>
+      {children}
+
+      <Footer />
     </>
   )
 }

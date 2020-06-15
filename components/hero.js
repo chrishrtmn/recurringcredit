@@ -7,16 +7,21 @@ export default function Hero() {
     <>
       <div className='hero'>
         <div className='background'></div>
+
         <Header />
+
         <div className='content'>
           <h1 className='title'>Prevent credit card inactivity.</h1>
+
           <h2>
             Start a recurring subscription to keep your credit cards active and
             your credit history intact.
           </h2>
+
           <button className='button-fill' onClick={stripeHandleClick}>
             Add Credit Card
           </button>
+
           <Link href='#about'>
             <a className='button-border'>Learn more</a>
           </Link>
