@@ -6,9 +6,12 @@ const About = ({ title, description, ...props }) => {
     <>
       <Layout pageTitle={title} description={description}>
         <Header />
-        <main>
-          <p>This is the about page</p>
-        </main>
+
+        <div className='wrapper'>
+          <main>
+            <p>This is the about page</p>
+          </main>
+        </div>
       </Layout>
     </>
   )

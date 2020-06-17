@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
-import * as gtag from '../lib/metrics-google-analytics'
+import * as gtag from '../libraries/metrics-google-analytics'
 
-import '../styles/reset.scss'
+import '../styles/main.scss'
 
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {

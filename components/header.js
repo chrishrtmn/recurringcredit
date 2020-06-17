@@ -15,11 +15,9 @@ export default function Header() {
       <style jsx>{`
         header {
           position: relative;
-          color: #fff;
-        }
-
-        a {
-          color: #fff;
+          margin: 0 0 60px;
+          padding: 20px 0;
+          background: #112a6b;
         }
       `}</style>
     </>

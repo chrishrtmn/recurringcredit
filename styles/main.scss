@@ -1,0 +1,31 @@
+@import 'reset';
+
+/*
+Colors:
+    Base: #333;
+    Primary: #112a6b;
+    Secondary: #f85b5b;
+
+Font Families:
+    Base: Arial, Helvetica, sans-serif;
+    Primary: 'Roboto', sans-serif; (400/i, 500/i, 700/i)
+
+Media Query Breakpoints:
+    Small: 600px;
+    Medium: 900px;
+    Large: 1200px;
+*/
+
+body,
+#__next {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

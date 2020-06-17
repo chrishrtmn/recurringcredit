@@ -8,11 +8,15 @@ const Index = ({ posts, title, description, ...props }) => {
     <>
       <Layout pageTitle={title} description={description}>
         <Header />
-        <main>
-          <h1 className='title'>Blog</h1>
-          <PostList posts={posts} />
-        </main>
+
+        <div className='wrapper'>
+          <main>
+            <h1 className='title'>Blog</h1>
+            <PostList posts={posts} />
+          </main>
+        </div>
       </Layout>
+      
       <style jsx>{`
         .title {
           margin: 1rem auto;

@@ -8,12 +8,14 @@ export default function Cancel({ title, description, ...props }) {
       <Layout pageTitle={title} description={description}>
         <Header />
 
-        <main>
-          This is the cancel page. Return{' '}
-          <Link href='/'>
-            <a>Home</a>
-          </Link>
-        </main>
+        <div className='wrapper'>
+          <main>
+            This is the cancel page. Return{' '}
+            <Link href='/'>
+              <a>Home</a>
+            </Link>
+          </main>
+        </div>
       </Layout>
     </>
   )

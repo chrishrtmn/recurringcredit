@@ -6,35 +6,43 @@ export default function Footer() {
   return (
     <>
       <footer className='footer'>
-        <span className='copyright'>
-          &copy; <span className='date-year'>{dateYear}</span> RecurringCredit.
-          All rights reserved.
-        </span>
+        <div className='wrapper'>
+          <span className='copyright'>
+            &copy; <span className='date-year'>{dateYear}</span>{' '}
+            RecurringCredit. All rights reserved.
+          </span>
 
-        <br />
+          <br />
 
-        <span className='legal-links'>
-          <Link href='/terms'>
-            <a>Terms and Conditions</a>
-          </Link>
+          <span className='legal-links'>
+            <Link href='/terms'>
+              <a>Terms and Conditions</a>
+            </Link>
 
-          <Link href='/privacy'>
-            <a>Privacy Policy</a>
-          </Link>
+            <Link href='/privacy'>
+              <a>Privacy Policy</a>
+            </Link>
 
-          <Link href='/disclaimer'>
-            <a>Disclaimer</a>
-          </Link>
-        </span>
+            <Link href='/disclaimer'>
+              <a>Disclaimer</a>
+            </Link>
+          </span>
 
-        <br />
+          <br />
 
-        <span className='social-links'>
-          <a href='#twitter'>Twitter</a>
+          <span className='social-links'>
+            <a href='#twitter'>Twitter</a>
 
-          <a href='#facebook'>Facebook</a>
-        </span>
+            <a href='#facebook'>Facebook</a>
+          </span>
+        </div>
       </footer>
+
+      <style jsx>{`
+        footer {
+          padding: 30px 0;
+        }
+      `}</style>
     </>
   )
 }
