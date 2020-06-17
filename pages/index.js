@@ -29,7 +29,7 @@ export default function Index({ title, description, ...props }) {
                 <p>Your credit cards and history will still be active.</p>
               </div>
 
-              <div>
+              <div id='pricing'>
                 <h3>Minimal costs.</h3>
                 <p>
                   Our subscription is only $1 every 3 months. That is super

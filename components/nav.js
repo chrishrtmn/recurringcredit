@@ -13,6 +13,10 @@ export default function Nav() {
           </Link>
         */}
 
+        <Link href='/#pricing'>
+          <a>Pricing</a>
+        </Link>
+
         <Link href='/faq'>
           <a>FAQ</a>
         </Link>

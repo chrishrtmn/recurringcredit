@@ -12,13 +12,11 @@ export default function Hero() {
 
         <div className='wrapper'>
           <div className='content'>
-            <h1 className='title'>
-              Prevent/Stop credit card closures/inactivity.
-            </h1>
+            <h1 className='title'>Prevent credit card closures.</h1>
 
             <h2>
-              Start/Set up a ($1) recurring subscription and keep your credit
-              card active and your credit history safe.
+              Start a simple recurring subscription to keep your credit card
+              active and your credit history safe.
             </h2>
 
             <div className='buttons'>
