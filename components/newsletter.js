@@ -5,8 +5,6 @@ export default function Newsletter() {
         <div className='wrapper'>
           <h2>Sign up for our free newsletter</h2>
           <p>Get notified by email when we release new updates and articles.</p>
-          <input type='field' placeholder='email' />
-          <button type='button'>Sign up for newsletter</button>
         </div>
       </div>
 

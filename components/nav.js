@@ -8,10 +8,15 @@ export default function Nav() {
           <Link href='/about'>
             <a>About</a>
           </Link>
+          
           <Link href='/blog'>
             <a>Blog</a>
           </Link>
         */}
+
+        <Link href='/'>
+          <a>Home</a>
+        </Link>
 
         <Link href='/#pricing'>
           <a>Pricing</a>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import stripeHandleClick from '../libraries/stripe-handle-click'
 import Header from './header'
+import { CreditCard } from '../libraries/svg'
 
 export default function Hero() {
   return (
@@ -28,6 +29,10 @@ export default function Hero() {
                 <button className='outline'>Learn more</button>
               </Link>
             </div>
+          </div>
+
+          <div className='image'>
+            <CreditCard />
           </div>
         </div>
       </div>
@@ -149,6 +154,11 @@ export default function Hero() {
         button.outline {
           border-color: #fff;
           background: none;
+        }
+
+        .image {
+          position: relative;
+          z-index: 1;
         }
       `}</style>
     </>

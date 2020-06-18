@@ -40,8 +40,12 @@ export default function Index({ title, description, ...props }) {
 
               <div>
                 <img />
-                <h3>Another headline.</h3>
-                <p>Description for this section goes here.</p>
+                <h3>Perfect for minimalists.</h3>
+                <p>
+                  Do you only use 1 or 2 credit cards, yet have several more and
+                  want to maintain their credit histories without worrying
+                  they'll be closed due to inactivity.
+                </p>
               </div>
             </div>
 
