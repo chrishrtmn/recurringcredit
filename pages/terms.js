@@ -8,25 +8,24 @@ export default function Terms({ title, description, ...props }) {
       <Layout pageTitle={title} description={description}>
         <Header />
 
-        <div className='wrapper'>
-          <main>
+        <main>
+          <div className='wrapper'>
             <h2>Welcome to RecurringCredit</h2>
+
             <p>
               These terms and conditions outline the rules and regulations for
               the use of RecurringCredit's Website.
-            </p>{' '}
+            </p>
+
             <br />
-            <em>RecurringCredit</em> is located at:
-            <br />
-            <address>
-              <br />
-            </address>
+
             <p>
               By accessing this website we assume you accept these terms and
               conditions in full. Do not continue to use RecurringCredit's
               website if you do not accept all of the terms and conditions
               stated on this page.
             </p>
+
             <p>
               The following terminology applies to these Terms and Conditions,
               Privacy Statement and Disclaimer Notice and any or all Agreements:
@@ -45,12 +44,15 @@ export default function Terms({ title, description, ...props }) {
               singular, plural, capitalisation and/or he/she or they, are taken
               as interchangeable and therefore as referring to same.
             </p>
+
             <h2>Cookies</h2>
+
             <p>
               We employ the use of cookies. By using RecurringCredit's website
               you consent to the use of cookies in accordance with
               RecurringCredit's privacy policy.
             </p>
+
             <p>
               Most of the modern day interactive web sites use cookies to enable
               us to retrieve user details for each visit. Cookies are used in
@@ -58,7 +60,9 @@ export default function Terms({ title, description, ...props }) {
               and ease of use for those people visiting. Some of our affiliate /
               advertising partners may also use cookies.
             </p>
+
             <h2>License</h2>
+
             <p>
               Unless otherwise stated, RecurringCredit and/or it's licensors own
               the intellectual property rights for all material on
@@ -67,7 +71,9 @@ export default function Terms({ title, description, ...props }) {
               for your own personal use subject to restrictions set in these
               terms and conditions.
             </p>
+
             <p>You must not:</p>
+
             <ol>
               <li>Republish material from https://recurringcredit.com</li>
               <li>
@@ -79,11 +85,14 @@ export default function Terms({ title, description, ...props }) {
                 https://recurringcredit.com
               </li>
             </ol>
+
             <p>
               Redistribute content from RecurringCredit (unless content is
               specifically made for redistribution).
             </p>
+
             <h2>User Comments</h2>
+
             <ol>
               <li>This Agreement shall begin on the date hereof.</li>
               <li>
@@ -137,7 +146,9 @@ export default function Terms({ title, description, ...props }) {
                 in any and all forms, formats or media.
               </li>
             </ol>
+
             <h2>Hyperlinking to our Content</h2>
+
             <ol>
               <li>
                 The following organizations may link to our Web site without
@@ -161,6 +172,7 @@ export default function Terms({ title, description, ...props }) {
                 </ol>
               </li>
             </ol>
+
             <ol start='2'>
               <li>
                 These organizations may link to our home page, to publications
@@ -194,6 +206,7 @@ export default function Terms({ title, description, ...props }) {
                 </ol>
               </li>
             </ol>
+
             <p>
               We will approve link requests from these organizations if we
               determine that: (a) the link would not reflect unfavorably on us
@@ -208,6 +221,7 @@ export default function Terms({ title, description, ...props }) {
               editorial content in a newsletter or similar product furthering
               the mission of the organization.
             </p>
+
             <p>
               These organizations may link to our home page, to publications or
               to other Web site information so long as the link: (a) is not in
@@ -216,6 +230,7 @@ export default function Terms({ title, description, ...props }) {
               services; and (c) fits within the context of the linking party's
               site.
             </p>
+
             <p>
               If you are among the organizations listed in paragraph 2 above and
               are interested in linking to our website, you must notify us by
@@ -232,9 +247,11 @@ export default function Terms({ title, description, ...props }) {
               to link to our Web site, and a list of the URL(s) on our site to
               which you would like to link. Allow 2-3 weeks for a response.
             </p>
+
             <p>
               Approved organizations may hyperlink to our Web site as follows:
             </p>
+
             <ol>
               <li>By use of our corporate name; or</li>
               <li>
@@ -247,18 +264,23 @@ export default function Terms({ title, description, ...props }) {
                 of content on the linking party's site.
               </li>
             </ol>
+
             <p>
               No use of RecurringCredit's logo or other artwork will be allowed
               for linking absent a trademark license agreement.
             </p>
+
             <h2>Iframes</h2>
+
             <p>
               Without prior approval and express written permission, you may not
               create frames around our Web pages or use other techniques that
               alter in any way the visual presentation or appearance of our Web
               site.
             </p>
+
             <h2>Reservation of Rights</h2>
+
             <p>
               We reserve the right at any time and in its sole discretion to
               request that you remove all links or any particular link to our
@@ -268,20 +290,25 @@ export default function Terms({ title, description, ...props }) {
               continuing to link to our Web site, you agree to be bound to and
               abide by these linking terms and conditions.
             </p>
+
             <h2>Removal of links from our website</h2>
+
             <p>
               If you find any link on our Web site or any linked web site
               objectionable for any reason, you may contact us about this. We
               will consider requests to remove links but will have no obligation
               to do so or to respond directly to you.
             </p>
+
             <p>
               Whilst we endeavour to ensure that the information on this website
               is correct, we do not warrant its completeness or accuracy; nor do
               we commit to ensuring that the website remains available or that
               the material on the website is kept up to date.
             </p>
+
             <h2>Content Liability</h2>
+
             <p>
               We shall have no responsibility or liability for any content
               appearing on your Web site. You agree to indemnify and defend us
@@ -301,6 +328,7 @@ export default function Terms({ title, description, ...props }) {
               fitness for purpose and/or the use of reasonable care and skill).
               Nothing in this disclaimer will:
             </p>
+
             <ol>
               <li>
                 limit or exclude our or your liability for death or personal
@@ -327,16 +355,18 @@ export default function Terms({ title, description, ...props }) {
               disclaimer, including liabilities arising in contract, in tort
               (including negligence) and for breach of statutory duty.
             </p>
+
             <p>
               To the extent that the website and the information and services on
               the website are provided free of charge, we will not be liable for
               any loss or damage of any nature.
             </p>
+
             <p>
-              <em>This page was last updated on June 8, 2020.</em>
+              <em>This page was last updated on June 18, 2020.</em>
             </p>
-          </main>
-        </div>
+          </div>
+        </main>
       </Layout>
     </>
   )

@@ -12,27 +12,29 @@ export default function Hero() {
         <Header />
 
         <div className='wrapper'>
-          <div className='content'>
-            <h1 className='title'>Prevent credit card closures.</h1>
+          <div className='container'>
+            <div className='content'>
+              <h1 className='title'>Prevent credit card closures.</h1>
 
-            <h2>
-              Start a simple recurring subscription to keep your credit card
-              active and your credit history safe.
-            </h2>
+              <h2>
+                Start a simple recurring subscription to keep your credit card
+                active and your credit history safe.
+              </h2>
 
-            <div className='buttons'>
-              <button className='fill' onClick={stripeHandleClick}>
-                Add credit card
-              </button>
+              <div className='buttons'>
+                <button className='fill' onClick={stripeHandleClick}>
+                  Add credit card
+                </button>
 
-              <Link href='#about'>
-                <button className='outline'>Learn more</button>
-              </Link>
+                <Link href='#about'>
+                  <button className='outline'>Learn more</button>
+                </Link>
+              </div>
             </div>
-          </div>
 
-          <div className='image'>
-            <CreditCard />
+            <div className='image'>
+              <CreditCard />
+            </div>
           </div>
         </div>
       </div>
@@ -71,6 +73,14 @@ export default function Hero() {
           }
         }
 
+        @media (min-width: 900px) {
+          .container {
+            display: grid;
+            grid-template-columns: 660px 1fr;
+            grid-gap: 40px;
+          }
+        }
+
         .content {
           position: relative;
           margin: 40px 0 0;
@@ -87,7 +97,7 @@ export default function Hero() {
 
         @media (min-width: 900px) {
           .content {
-            max-width: 660px;
+            /*max-width: 660px;*/
           }
         }
 
@@ -157,8 +167,15 @@ export default function Hero() {
         }
 
         .image {
-          position: relative;
-          z-index: 1;
+          display: none;
+        }
+
+        @media (min-width: 900px) {
+          .image {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+          }
         }
       `}</style>
     </>

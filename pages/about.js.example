@@ -7,11 +7,11 @@ const About = ({ title, description, ...props }) => {
       <Layout pageTitle={title} description={description}>
         <Header />
 
-        <div className='wrapper'>
-          <main>
+        <main>
+          <div className='wrapper'>
             <p>This is the about page</p>
-          </main>
-        </div>
+          </div>
+        </main>
       </Layout>
     </>
   )

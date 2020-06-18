@@ -9,12 +9,12 @@ const Index = ({ posts, title, description, ...props }) => {
       <Layout pageTitle={title} description={description}>
         <Header />
 
-        <div className='wrapper'>
-          <main>
+        <main>
+          <div className='wrapper'>
             <h1 className='title'>Blog</h1>
-            <PostList posts={posts} />
-          </main>
-        </div>
+            <PostList posts={posts} />  
+          </div>
+        </main>
       </Layout>
       
       <style jsx>{`

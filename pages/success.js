@@ -8,14 +8,14 @@ export default function Cancel({ title, description, ...props }) {
       <Layout pageTitle={title} description={description}>
         <Header />
 
-        <div className='wrapper'>
-          <main>
+        <main>
+          <div className='wrapper'>
             This is the success page. Return{' '}
             <Link href='/'>
               <a>Home</a>
             </Link>
-          </main>
-        </div>
+          </div>
+        </main>
       </Layout>
     </>
   )

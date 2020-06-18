@@ -8,18 +8,22 @@ export default function Privacy({ title, description, ...props }) {
       <Layout pageTitle={title} description={description}>
         <Header />
 
-        <div className='wrapper'>
-          <main>
+        <main>
+          <div className='wrapper'>
             <h1>Welcome to our Privacy Policy</h1>
+
             <h3>Your privacy is critically important to us.</h3>
-            RecurringCredit is located at:
+
+            <p>RecurringCredit is located at:</p>
+
             <br />
+
             <address>
               RecurringCredit
               <br />
-              <br />
               3302985390{' '}
             </address>
+
             <p>
               It is RecurringCredit's policy to respect your privacy regarding
               any information we may collect while operating our website. This
@@ -37,6 +41,7 @@ export default function Privacy({ title, description, ...props }) {
               information we collect through the Website and does not apply to
               our collection of information from other sources.
             </p>
+
             <p>
               This Privacy Policy, together with the Terms and conditions posted
               on our Website, set forth the general rules and policies governing
@@ -44,7 +49,9 @@ export default function Privacy({ title, description, ...props }) {
               visiting our Website, you may be required to agree to additional
               terms and conditions.
             </p>
+
             <h2>Website Visitors</h2>
+
             <p>
               Like most website operators, RecurringCredit collects
               non-personally-identifying information of the sort that web
@@ -57,6 +64,7 @@ export default function Privacy({ title, description, ...props }) {
               in the aggregate, e.g., by publishing a report on trends in the
               usage of its website.
             </p>
+
             <p>
               RecurringCredit also collects potentially personally-identifying
               information like Internet Protocol (IP) addresses for logged in
@@ -66,7 +74,9 @@ export default function Privacy({ title, description, ...props }) {
               circumstances that it uses and discloses personally-identifying
               information as described below.
             </p>
+
             <h2>Gathering of Personally-Identifying Information</h2>
+
             <p>
               Certain visitors to RecurringCredit's websites choose to interact
               with RecurringCredit in ways that require RecurringCredit to
@@ -76,7 +86,9 @@ export default function Privacy({ title, description, ...props }) {
               blog at https://recurringcredit.com to provide a username and
               email address.
             </p>
+
             <h2>Security</h2>
+
             <p>
               The security of your Personal Information is important to us, but
               remember that no method of transmission over the Internet, or
@@ -84,7 +96,9 @@ export default function Privacy({ title, description, ...props }) {
               use commercially acceptable means to protect your Personal
               Information, we cannot guarantee its absolute security.
             </p>
+
             <h2>Advertisements</h2>
+
             <p>
               Ads appearing on our website may be delivered to users by
               advertising partners, who may set cookies. These cookies allow the
@@ -96,7 +110,9 @@ export default function Privacy({ title, description, ...props }) {
               covers the use of cookies by RecurringCredit and does not cover
               the use of cookies by any advertisers.
             </p>
+
             <h2>Links To External Sites</h2>
+
             <p>
               Our Service may contain links to external sites that are not
               operated by us. If you click on a third party link, you will be
@@ -104,14 +120,17 @@ export default function Privacy({ title, description, ...props }) {
               review the Privacy Policy and terms and conditions of every site
               you visit.
             </p>
+
             <p>
               We have no control over, and assume no responsibility for the
               content, privacy policies or practices of any third party sites,
               products or services.
             </p>
+
             <h2>
               Https://recurringcredit.com uses Google AdWords for remarketing
             </h2>
+
             <p>
               Https://recurringcredit.com uses the remarketing services to
               advertise on third party websites (including Google) to previous
@@ -124,13 +143,16 @@ export default function Privacy({ title, description, ...props }) {
               Of course, any data collected will be used in accordance with our
               own privacy policy and Google's privacy policy.
             </p>
+
             <p>
               You can set preferences for how Google advertises to you using the
               Google Ad Preferences page, and if you want to you can opt out of
               interest-based advertising entirely by cookie settings or
               permanently using a browser plugin.
             </p>
+
             <h2>Protection of Certain Personally-Identifying Information</h2>
+
             <p>
               RecurringCredit discloses potentially personally-identifying and
               personally-identifying information only to those of its employees,
@@ -152,6 +174,7 @@ export default function Privacy({ title, description, ...props }) {
               protect the property or rights of RecurringCredit, third parties
               or the public at large.
             </p>
+
             <p>
               If you are a registered user of https://recurringcredit.com and
               have supplied your email address, RecurringCredit may occasionally
@@ -168,7 +191,9 @@ export default function Privacy({ title, description, ...props }) {
               potentially personally-identifying and personally-identifying
               information.
             </p>
+
             <h2>Aggregated Statistics</h2>
+
             <p>
               RecurringCredit may collect statistics about the behavior of
               visitors to its website. RecurringCredit may display this
@@ -176,13 +201,16 @@ export default function Privacy({ title, description, ...props }) {
               RecurringCredit does not disclose your personally-identifying
               information.
             </p>
+
             <h2>Cookies</h2>
+
             <p>
               To enrich and perfect your online experience, RecurringCredit uses
               "Cookies", similar technologies and services provided by others to
               display personalized content, appropriate advertising and store
               your preferences on your computer.
             </p>
+
             <p>
               A cookie is a string of information that a website stores on a
               visitor's computer, and that the visitor's browser provides to the
@@ -195,12 +223,15 @@ export default function Privacy({ title, description, ...props }) {
               drawback that certain features of RecurringCredit's websites may
               not function properly without the aid of cookies.
             </p>
+
             <p>
               By continuing to navigate our website without changing your cookie
               settings, you hereby acknowledge and agree to RecurringCredit's
               use of cookies.
             </p>
+
             <h2>E-commerce</h2>
+
             <p>
               Those who engage in transactions with RecurringCredit – by
               purchasing RecurringCredit's services or products, are asked to
@@ -215,7 +246,9 @@ export default function Privacy({ title, description, ...props }) {
               caveat that it may prevent them from engaging in certain
               website-related activities.
             </p>
+
             <h2>Privacy Policy Changes</h2>
+
             <p>
               Although most changes are likely to be minor, RecurringCredit may
               change its Privacy Policy from time to time, and in
@@ -225,11 +258,12 @@ export default function Privacy({ title, description, ...props }) {
               in this Privacy Policy will constitute your acceptance of such
               change.
             </p>
+
             <p>
-              <em>This page was last updated on June 8, 2020.</em>
+              <em>This page was last updated on June 18, 2020.</em>
             </p>
-          </main>
-        </div>
+          </div>
+        </main>
       </Layout>
     </>
   )

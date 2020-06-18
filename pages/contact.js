@@ -1,5 +1,6 @@
 import Layout from '../components/layout'
 import Header from '../components/header'
+import Newsletter from '../components/newsletter'
 
 export default function Contact({ title, description, ...props }) {
   return (
@@ -7,9 +8,13 @@ export default function Contact({ title, description, ...props }) {
       <Layout pageTitle={title} description={description}>
         <Header />
 
-        <div className='wrapper'>
-          <main>This is the Contact page.</main>
-        </div>
+        <main>
+          <div className='wrapper'>
+            <p>This is the Contact page.</p>
+          </div>
+        </main>
+
+        <Newsletter />
       </Layout>
     </>
   )
