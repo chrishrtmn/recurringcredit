@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import stripeHandleClick from '../libraries/stripe-handle-click'
 import Header from './header'
-import { CreditCard } from '../libraries/svg'
+import { CreditCard } from '../libraries/constants-svg'
 
 export default function Hero() {
   return (

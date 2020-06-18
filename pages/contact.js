@@ -1,5 +1,6 @@
 import Layout from '../components/layout'
 import Header from '../components/header'
+import FormContact from '../libraries/form-contact'
 import Newsletter from '../components/newsletter'
 
 export default function Contact({ title, description, ...props }) {
@@ -10,7 +11,9 @@ export default function Contact({ title, description, ...props }) {
 
         <main>
           <div className='wrapper'>
-            <p>This is the Contact page.</p>
+            <h2>This is the Contact page.</h2>
+
+            <FormContact />
           </div>
         </main>
 
@@ -18,4 +21,15 @@ export default function Contact({ title, description, ...props }) {
       </Layout>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const configData = await import(`../siteconfig.json`)
+
+  return {
+    props: {
+      title: configData.default.title,
+      description: configData.default.descriptionContact,
+    },
+  }
 }

@@ -49,6 +49,28 @@ export default function Index({ title, description, ...props }) {
               </div>
             </div>
 
+            {/*
+            <div className='clients'>
+              <h2>Our clients love us</h2>
+            </div>
+            */}
+
+            {/*
+            <div className='numbers'>
+              <h2>Statistics</h2>
+              <p>800 credit cards have been prevented from closures.</p>
+            </div>
+            */}
+
+            {/*
+            <div className='media'>
+              <h2>RecurringCredit In The Media</h2>
+              <p>Website 1</p>
+              <p>Website 2</p>
+              <p>Website 3</p>
+            </div>
+            */}
+
             <div className='container'>
               <div className='item get-started'>
                 <h2>Ready to get started?</h2>

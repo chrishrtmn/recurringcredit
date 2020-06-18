@@ -1,3 +1,5 @@
+import FormNewsletter from '../libraries/form-newsletter'
+
 export default function Newsletter() {
   return (
     <>
@@ -6,6 +8,8 @@ export default function Newsletter() {
           <h2>Sign up for our newsletter</h2>
           <p>Get notified by email when we release new updates and articles.</p>
         </div>
+
+        <FormNewsletter />
       </div>
 
       <style jsx>{`
