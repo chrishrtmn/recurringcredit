@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Footer from './footer'
+import Footer from './shared/footer'
 
 export default function Layout({ children, pageTitle, description, ...props }) {
   return (

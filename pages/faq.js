@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
-import Header from '../components/header'
-import Newsletter from '../components/newsletter'
+import Header from '../components/shared/header'
+import Newsletter from '../components/shared/newsletter'
 
 export default function Faq({ title, description, ...props }) {
   return (

@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
-import Header from '../components/header'
+import Header from '../components/shared/header'
 import FormContact from '../libraries/form-contact'
-import Newsletter from '../components/newsletter'
+import Newsletter from '../components/shared/newsletter'
 
 export default function Contact({ title, description, ...props }) {
   return (

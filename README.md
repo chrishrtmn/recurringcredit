@@ -26,3 +26,4 @@ Visit [http://localhost:3000](http://localhost:3000)
 - Convert Stripe to client + server integration
   - Customer Portal
   - Enhanced styling options
+- Convert styled-jsx to styled-components

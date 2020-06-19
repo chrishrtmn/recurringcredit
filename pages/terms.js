@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Header from '../components/header'
+import Header from '../components/shared/header'
 
 export default function Terms({ title, description, ...props }) {
   return (

@@ -1,4 +1,4 @@
-import FormNewsletter from '../libraries/form-newsletter'
+import FormNewsletter from '../../libraries/form-newsletter'
 
 export default function Newsletter() {
   return (

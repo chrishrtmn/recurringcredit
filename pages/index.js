@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
 import Hero from '../components/hero'
-import Newsletter from '../components/newsletter'
+import Newsletter from '../components/shared/newsletter'
 import Faq from '../components/faq'
 import stripeHandleClick from '../libraries/stripe-handle-click'
 
@@ -18,6 +18,10 @@ export default function Index({ title, description, ...props }) {
               forced to use or manage your credit cards in order to keep them
               active and open, to prevent dormancy and inactivity, leading to
               closure and hurting your credit history.
+            </p>
+
+            <p>
+              The average person in the US have at least 3 credit cards. Etc.
             </p>
 
             <div className='benefits'>

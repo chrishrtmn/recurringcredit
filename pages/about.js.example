@@ -1,5 +1,5 @@
 import Layout from '../components/layout'
-import Header from '../components/header'
+import Header from '../components/shared/header'
 
 const About = ({ title, description, ...props }) => {
   return (
