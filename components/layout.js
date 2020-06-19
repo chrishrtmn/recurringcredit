@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import HeadTags from './head-tags'
 import Footer from './footer'
 
 export default function Layout({ children, pageTitle, description, ...props }) {
@@ -11,7 +10,6 @@ export default function Layout({ children, pageTitle, description, ...props }) {
           {/* <title> should be less than 55 characters for SEO */}
           {description} | {pageTitle}
         </title>
-        <HeadTags />
       </Head>
 
       {children}

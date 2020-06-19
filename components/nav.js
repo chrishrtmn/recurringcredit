@@ -4,6 +4,8 @@ export default function Nav() {
   return (
     <>
       <nav>
+        {/*<a>Light/Dark (Minimalist) Mode</a>*/}
+
         {/*
           <Link href='/about'>
             <a>About</a>
@@ -31,6 +33,8 @@ export default function Nav() {
         </Link>
 
         {/*<a onClick={stripeHandleClick}>Add Credit Card</a>*/}
+
+        {/*<a>Customer Login</a>*/}
       </nav>
 
       <style jsx>{`

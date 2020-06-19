@@ -34,6 +34,8 @@ export default function Footer() {
             <a href='#twitter'>Twitter</a>
 
             <a href='#facebook'>Facebook</a>
+
+            <a href='mailto:hello@recurringcredit.com'>Email</a>
           </span>
         </div>
       </footer>

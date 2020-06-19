@@ -54,36 +54,40 @@ export default function FormContact() {
         method='post'
         onSubmit={handleSubmit}
       >
-        <label className='label'>Your Name</label>
         <input
           className='input'
           type='text'
-          placeholder='Name'
           name='name'
+          placeholder='Name'
+          aria-label='Your name'
           onChange={handleChange}
           required
         />
 
-        <label className='label'>Your Email</label>
         <input
           className='input'
           type='email'
-          placeholder='Email'
           name='email'
+          placeholder='Email'
+          aria-label='Your email'
           onChange={handleChange}
           required
         />
 
-        <label className='label'>Message</label>
         <textarea
           className='textarea'
-          placeholder='Your Message'
           name='message'
+          placeholder='Message'
+          aria-label='Your message'
           onChange={handleChange}
           required
         />
 
-        <button className='button is-primary' type='submit'>
+        <button
+          className='button'
+          type='submit'
+          aria-label='Submit contact form'
+        >
           Submit
         </button>
       </form>

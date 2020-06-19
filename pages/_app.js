@@ -4,7 +4,7 @@ import * as gtag from '../libraries/metrics-google-analytics'
 
 import '../styles/main.scss'
 
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url)
@@ -17,3 +17,5 @@ export default function MyApp({ Component, pageProps }) {
 
   return <Component {...pageProps} />
 }
+
+export default MyApp
