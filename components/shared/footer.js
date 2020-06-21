@@ -26,6 +26,13 @@ export default function Footer() {
             <Link href='/disclaimer'>
               <a>Disclaimer</a>
             </Link>
+
+            {/*
+            <Link href='/cancellation'>
+              <a>Cancellation</a>
+              eg: https://www.youneedabudget.com/cancellation/
+            </Link>
+            */}
           </span>
 
           <br />
@@ -37,6 +44,15 @@ export default function Footer() {
 
             <a href='mailto:hello@recurringcredit.com'>Email</a>
           </span>
+
+          {/*
+          <span className='company-links'>
+            <Link href='/about'><a>About</a></Link>
+            eg: https://www.youneedabudget.com/about-us/
+            <Link href='/press'><a>Press</a></Link>
+            eg: https://www.youneedabudget.com/press/
+          </span>
+          */}
         </div>
       </footer>
 

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export default function FormContact() {
-  const [contact, setContact] = useState({
+  const [values, setValues] = useState({
     name: '',
     email: '',
     subject: 'Contact - RecurringCredit',
@@ -14,14 +14,14 @@ export default function FormContact() {
   })
 
   const handleChange = (e) =>
-    setContact({ ...contact, [e.target.name]: e.target.value })
+    setValues({ ...values, [e.target.name]: e.target.value })
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
       const res = await fetch(`https://formspree.io/mjvaogwv`, {
         method: 'POST',
-        body: JSON.stringify(contact),
+        body: JSON.stringify(values),
         headers: { 'Content-Type': 'application/json' },
       })
 
@@ -50,7 +50,7 @@ export default function FormContact() {
   return (
     <>
       <form
-        action='https://api.staticforms.xyz/submit'
+        action='https://formspree.io/mjvaogwv'
         method='post'
         onSubmit={handleSubmit}
       >
@@ -67,7 +67,7 @@ export default function FormContact() {
         <input
           className='input'
           type='email'
-          name='email'
+          name='_replyto'
           placeholder='Email'
           aria-label='Your email'
           onChange={handleChange}
@@ -83,20 +83,29 @@ export default function FormContact() {
           required
         />
 
+        {/*
+        <input
+          type='hidden'
+          name='_next'
+          value='//recurringcredit.com/contact'
+        />
+        */}
+
         <button
           className='button'
           type='submit'
+          /*disabled={isSubmitting}*/
           aria-label='Submit contact form'
         >
           Submit
         </button>
       </form>
 
-      {response.type === 'success' && (
-        <div className='message success'>{response.message}</div>
-      )}
       {response.type === 'error' && (
-        <div className='message error'>{response.message}</div>
+        <div className='message error'>Error: {response.message}</div>
+      )}
+      {response.type !== 'error' && response.message && (
+        <p>Message: {response.message}</p>
       )}
     </>
   )

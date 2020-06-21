@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
-import Hero from '../components/hero'
+import Hero from '../components/home/hero'
 import Newsletter from '../components/shared/newsletter'
-import Faq from '../components/faq'
+import Faq from '../components/home/faq'
 import stripeHandleClick from '../libraries/stripe-handle-click'
 
 export default function Index({ title, description, ...props }) {
@@ -13,16 +13,49 @@ export default function Index({ title, description, ...props }) {
         <main>
           <div className='wrapper'>
             <p className='introduction'>
-              Are you trying to stop credit card usage, but keep your credit
-              history? RecurringCredit gives you a piece of mind from feeling
-              forced to use or manage your credit cards in order to keep them
-              active and open, to prevent dormancy and inactivity, leading to
-              closure and hurting your credit history.
+              RecurringCredit gives you a piece of mind from feeling forced to
+              use or manage your credit cards in order to keep them active and
+              open, to prevent dormancy and inactivity, leading to closure and
+              hurting your credit history.
+            </p>
+            <p>
+              Are you trying to stop credit card usage but keep your credit
+              history? This service gives a piece of mind from feeling forced to
+              use or manage your credit cards to keep them active and open, to
+              prevent dormancy and inactivity, leading to closure and hurting
+              your credit history.
             </p>
 
-            <p>
-              The average person in the US have at least 3 credit cards. Etc.
-            </p>
+            <div className='use-cases'>
+              <h2>"Why You Need This"</h2>
+              <ul>
+                <li>On autopilot</li>
+                <li>
+                  Charged annual fee and couldn’t opt out of the charge as I
+                  hadn’t used the credit card all year
+                </li>
+                <li>
+                  2nd oldest standing credit card randomly closed due to
+                  inactivity, without any notice (not a law everywhere)
+                </li>
+                <li>
+                  Denied credit increase due to low usage in recent months
+                </li>
+                <li>Difficult to remember which cards had last been used</li>
+              </ul>
+            </div>
+
+            <div className='boxes'>
+              <div className='box'>
+                The average person in the US have at least 3 credit cards. Etc.
+              </div>
+              <div className='box'>
+                The average person has 2 major banking credit cards.
+              </div>
+              <div className='box'>
+                The average person has 1 store credit cards.
+              </div>
+            </div>
 
             <div className='benefits'>
               <h2>Benefits</h2>
@@ -30,7 +63,10 @@ export default function Index({ title, description, ...props }) {
               <div>
                 <img />
                 <h3>Spend less time worrying.</h3>
-                <p>Your credit cards and history will still be active.</p>
+                <p>
+                  Are you trying to stop credit card usage, but keep your credit
+                  history? Your credit cards and history will still be active.
+                </p>
               </div>
 
               <div id='pricing'>
@@ -63,21 +99,34 @@ export default function Index({ title, description, ...props }) {
             <div className='numbers'>
               <h2>Statistics</h2>
               <p>800 credit cards have been prevented from closures.</p>
+              <p>RecurringCredit has saved 1234 credit cards from being inactive and closing!</p>
             </div>
             */}
 
             {/*
             <div className='media'>
               <h2>RecurringCredit In The Media</h2>
+              <h2>As featured in:</h2>
               <p>Website 1</p>
               <p>Website 2</p>
               <p>Website 3</p>
             </div>
             */}
 
+            <div>
+              <p>
+                Your security and trust are important to us. We're committed to
+                protecting...
+              </p>
+              <ul>
+                <li>Partnership with Stripe: A payment processor</li>
+              </ul>
+            </div>
+
             <div className='container'>
               <div className='item get-started'>
                 <h2>Ready to get started?</h2>
+                <p>Let us help keep your accounts active</p>
                 <p>Initial steps followed by what will happen.</p>
                 <p>$1 every 3 months.</p>
                 <button className='fill alt' onClick={stripeHandleClick}>
@@ -104,6 +153,12 @@ export default function Index({ title, description, ...props }) {
           font-size: 18px;
         }
 
+        .boxes {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          text-align: center;
+        }
+
         .benefits {
           padding: 60px 0;
           text-align: center;
@@ -115,14 +170,9 @@ export default function Index({ title, description, ...props }) {
 
         .container {
           display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(40ch, 1fr));
           grid-gap: 60px;
           padding: 60px 0 80px;
-        }
-
-        @media (min-width: 900px) {
-          .container {
-            grid-template-columns: 1fr 1fr;
-          }
         }
 
         .item {
@@ -130,6 +180,7 @@ export default function Index({ title, description, ...props }) {
           border-radius: 10px;
           text-align: center;
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+          /*font-size: clamp(1rem, 2vw, 1.5rem);*/
         }
 
         .item p {

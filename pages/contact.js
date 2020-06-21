@@ -13,6 +13,11 @@ export default function Contact({ title, description, ...props }) {
           <div className='wrapper'>
             <h2>This is the Contact page.</h2>
 
+            <p>
+              Please contact us if you need to cancel or change your
+              subscription.
+            </p>
+
             <FormContact />
           </div>
         </main>

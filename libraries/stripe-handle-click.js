@@ -14,7 +14,7 @@ const stripeHandleClick = async (event) => {
     ],
     mode: 'subscription',
     successUrl: `${process.env.NEXT_PUBLIC_ROOT_URL}/success`,
-    cancelUrl: `${process.env.NEXT_PUBLIC_ROOT_URL}/cancel`,
+    cancelUrl: `${process.env.NEXT_PUBLIC_ROOT_URL}`,
   })
   // If `redirectToCheckout` fails due to a browser or network
   // error, display the localized error message to your customer

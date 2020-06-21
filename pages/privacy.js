@@ -8,6 +8,10 @@ export default function Privacy({ title, description, ...props }) {
       <Layout pageTitle={title} description={description}>
         <Header />
 
+        {/* 
+          https://www.youneedabudget.com/privacy-policy/
+        */}
+
         <main>
           <div className='wrapper'>
             <h1>Welcome to our Privacy Policy</h1>

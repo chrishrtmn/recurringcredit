@@ -34,7 +34,12 @@ export default function Nav() {
 
         {/*<a onClick={stripeHandleClick}>Add Credit Card</a>*/}
 
-        {/*<a>Customer Login</a>*/}
+        <a
+          className='portal'
+          href='https://mysuperportal.com/access/recurringcredit/'
+        >
+          Customer Login
+        </a>
       </nav>
 
       <style jsx>{`

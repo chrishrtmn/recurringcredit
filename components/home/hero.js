@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import stripeHandleClick from '../libraries/stripe-handle-click'
-import Header from './shared/header'
-import { CreditCard } from '../libraries/constants-svg'
+import stripeHandleClick from '../../libraries/stripe-handle-click'
+import Header from '../shared/header'
+import { CreditCard } from '../../libraries/constants-svg'
 
 export default function Hero() {
   return (
@@ -17,7 +17,17 @@ export default function Hero() {
               <h1 className='title'>Prevent credit card closures.</h1>
 
               <h2>
-                Start a simple recurring subscription to keep your credit card
+                Manage your credit card history by subscribing to our simple
+                recurring plan.
+              </h2>
+
+              <h2>
+                Recurring subscription for credit card management for
+                minimalists.
+              </h2>
+
+              <h2>
+                Start a simple recurring subscription to keep your credit cards
                 active and your credit history safe.
               </h2>
 
@@ -33,6 +43,7 @@ export default function Hero() {
             </div>
 
             <div className='image'>
+              $1 / 3mo.
               <CreditCard />
             </div>
           </div>

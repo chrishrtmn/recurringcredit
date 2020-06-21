@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Faq() {
   return (
     <>
-      <h2 className='spacer'>Still have questions?</h2>
+      <h2>Still have questions?</h2>
       <p>
         <Link href='/faq'>
           <a title='Frequently Asked Questions'>View our FAQ</a>
@@ -12,12 +12,6 @@ export default function Faq() {
           <a title='Contact'>Connect with us</a>
         </Link>
       </p>
-
-      <style jsx>{`
-        .spacer {
-          margin: 40px 0 0;
-        }
-      `}</style>
     </>
   )
 }

@@ -8,9 +8,13 @@ export default function Terms({ title, description, ...props }) {
       <Layout pageTitle={title} description={description}>
         <Header />
 
+        {/* 
+          https://www.youneedabudget.com/terms/
+        */}
+
         <main>
           <div className='wrapper'>
-            <h2>Welcome to RecurringCredit</h2>
+            <h1>Terms & Conditions</h1>
 
             <p>
               These terms and conditions outline the rules and regulations for
