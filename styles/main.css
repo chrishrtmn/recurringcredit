@@ -1,5 +1,6 @@
 :root {
   --color-base: #333;
+  --color-base-light: #666;
   --color-primary: #112a6b;
   --color-secondary: #f85b5b;
 
@@ -43,7 +44,7 @@ dd {
 }
 
 body {
-  /*min-height: 100vh;*/
+  min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -90,4 +91,8 @@ body,
   max-width: var(--breakpoint-large);
   margin: 0 auto;
   padding: 0 20px;
+}
+
+a {
+  transition: all ease-in-out 0.2s;
 }

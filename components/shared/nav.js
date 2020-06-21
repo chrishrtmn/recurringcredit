@@ -24,9 +24,11 @@ export default function Nav() {
           <a>Pricing</a>
         </Link>
 
+        {/*
         <Link href='/faq'>
           <a>FAQ</a>
         </Link>
+        */}
 
         <Link href='/contact'>
           <a>Contact</a>
@@ -37,6 +39,11 @@ export default function Nav() {
         <a
           className='portal'
           href='https://mysuperportal.com/access/recurringcredit/'
+          style={{
+            border: '1px solid #fff',
+            borderRadius: '10px',
+            padding: '3px 10px 3px',
+          }}
         >
           Customer Login
         </a>
@@ -50,7 +57,7 @@ export default function Nav() {
 
         nav a {
           display: inline-block;
-          margin: 0 0 0 40px;
+          margin: 0 0 0 30px;
           padding: 5px 0 2px;
           font-size: 18px;
           font-family: 'Roboto', sans-serif;

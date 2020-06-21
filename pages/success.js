@@ -12,6 +12,11 @@ export default function Cancel({ title, description, ...props }) {
           <div className='wrapper'>
             <h1>Credit card added/Subscription successful!</h1>
             <p>
+              AWESOME! WE SUGGEST YOU GO TO YOUR CREDIT CARD PROVIDERS WEBSITE
+              AND SET IT TO AUTOPAY IF IT ISNT ALREADY SO YOU CAN BE WORRY FREE
+              KNOWING YOURE ONLY PAYING $1 EVERY 3 MONTHS.
+            </p>
+            <p>
               <Link href='/'>
                 <a>Add another card</a>
               </Link>

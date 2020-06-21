@@ -16,15 +16,19 @@ export default function Hero() {
             <div className='content'>
               <h1 className='title'>Prevent credit card closures.</h1>
 
+              {/*
               <h2>
                 Manage your credit card history by subscribing to our simple
                 recurring plan.
               </h2>
+              */}
 
+              {/*
               <h2>
                 Recurring subscription for credit card management for
                 minimalists.
               </h2>
+              */}
 
               <h2>
                 Start a simple recurring subscription to keep your credit cards

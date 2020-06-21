@@ -18,6 +18,8 @@ export default function Contact({ title, description, ...props }) {
               subscription.
             </p>
 
+            <p>Provide feedback on our site, service or other!</p>
+
             <FormContact />
           </div>
         </main>

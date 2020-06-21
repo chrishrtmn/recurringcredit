@@ -2,6 +2,7 @@ import Layout from '../components/layout'
 import Hero from '../components/home/hero'
 import Newsletter from '../components/shared/newsletter'
 import Faq from '../components/home/faq'
+import MetricCounts from '../components/home/metrics-counts'
 import stripeHandleClick from '../libraries/stripe-handle-click'
 
 export default function Index({ title, description, ...props }) {
@@ -13,12 +14,6 @@ export default function Index({ title, description, ...props }) {
         <main>
           <div className='wrapper'>
             <p className='introduction'>
-              RecurringCredit gives you a piece of mind from feeling forced to
-              use or manage your credit cards in order to keep them active and
-              open, to prevent dormancy and inactivity, leading to closure and
-              hurting your credit history.
-            </p>
-            <p>
               Are you trying to stop credit card usage but keep your credit
               history? This service gives a piece of mind from feeling forced to
               use or manage your credit cards to keep them active and open, to
@@ -26,10 +21,11 @@ export default function Index({ title, description, ...props }) {
               your credit history.
             </p>
 
+            {/*
             <div className='use-cases'>
               <h2>"Why You Need This"</h2>
               <ul>
-                <li>On autopilot</li>
+                <li></li>
                 <li>
                   Charged annual fee and couldn’t opt out of the charge as I
                   hadn’t used the credit card all year
@@ -44,7 +40,9 @@ export default function Index({ title, description, ...props }) {
                 <li>Difficult to remember which cards had last been used</li>
               </ul>
             </div>
+            */}
 
+            {/*
             <div className='boxes'>
               <div className='box'>
                 The average person in the US have at least 3 credit cards. Etc.
@@ -56,6 +54,7 @@ export default function Index({ title, description, ...props }) {
                 The average person has 1 store credit cards.
               </div>
             </div>
+            */}
 
             <div className='benefits'>
               <h2>Benefits</h2>
@@ -96,10 +95,8 @@ export default function Index({ title, description, ...props }) {
             */}
 
             {/*
-            <div className='numbers'>
-              <h2>Statistics</h2>
-              <p>800 credit cards have been prevented from closures.</p>
-              <p>RecurringCredit has saved 1234 credit cards from being inactive and closing!</p>
+            <div className='metrics'>
+              <MetricsCounts />
             </div>
             */}
 
@@ -113,6 +110,7 @@ export default function Index({ title, description, ...props }) {
             </div>
             */}
 
+            {/*
             <div>
               <p>
                 Your security and trust are important to us. We're committed to
@@ -122,10 +120,12 @@ export default function Index({ title, description, ...props }) {
                 <li>Partnership with Stripe: A payment processor</li>
               </ul>
             </div>
+            */}
 
             <div className='container'>
               <div className='item get-started'>
                 <h2>Ready to get started?</h2>
+                <strong>Get on autopilot with your cards on autopay.</strong>
                 <p>Let us help keep your accounts active</p>
                 <p>Initial steps followed by what will happen.</p>
                 <p>$1 every 3 months.</p>

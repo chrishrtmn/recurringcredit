@@ -14,9 +14,11 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ## Pre-launch to-do list
 
-- Finish home page styling
-- Contact page/form
-- Subscribe to newsletter form/section
+- Copy terminology
+- Home page styling
+- Hero image
+- Contact page/form - get response/redirect working
+- Subscribe to newsletter form/section - get response/redirect working
 - Update "last updated" dates on Legal pages upon launch
 
 ## Post-launch to-do list
@@ -27,3 +29,4 @@ Visit [http://localhost:3000](http://localhost:3000)
   - Customer Portal
   - Enhanced styling options
 - Convert styled-jsx to styled-components
+- Light/Dark minimalist switcher button
