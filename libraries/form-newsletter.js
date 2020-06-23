@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 export default function FormNewsletter() {
   const [contact, setContact] = useState({
-    name: '',
     email: '',
   })
 
@@ -52,16 +51,6 @@ export default function FormNewsletter() {
         method='post'
         onSubmit={handleSubmit}
       >
-        <input
-          className='input'
-          type='text'
-          name='name'
-          placeholder='Name'
-          aria-label='Your name'
-          onChange={handleChange}
-          required
-        />
-
         <input
           className='input'
           type='email'

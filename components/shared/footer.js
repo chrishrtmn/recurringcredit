@@ -30,10 +30,7 @@ export default function Footer() {
           </div>
 
           <div className='social-links'>
-            <a href='#twitter'>Twitter</a>
-
-            <a href='#facebook'>Facebook</a>
-
+            <a href='#twitter'>Twitter</a> <a href='#facebook'>Facebook</a>{' '}
             <a href='mailto:hello@recurringcredit.com'>Email</a>
           </div>
           {/*

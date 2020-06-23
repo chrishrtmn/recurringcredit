@@ -1,7 +1,6 @@
-import Link from 'next/link'
 import stripeHandleClick from '../../libraries/stripe-handle-click'
 import Header from '../shared/header'
-import { CreditCard } from '../../libraries/constants-svg'
+import { CardOutline } from '../../libraries/constants-svg'
 
 export default function Hero() {
   return (
@@ -16,39 +15,12 @@ export default function Hero() {
             <div className='content'>
               <h1 className='title'>Prevent credit card closures.</h1>
 
-              {/*
               <h2>
-                Manage your credit card history by subscribing to our simple
-                recurring plan.
-              </h2>
-              */}
-
-              {/*
-              <h2>
-                Recurring subscription for credit card management for
-                minimalists.
-              </h2>
-              */}
-
-              <h2>
-                Start a simple recurring subscription to keep your credit cards
-                active and your credit history safe.
+                A simple service to help keep your credit cards open and score
+                history active.
               </h2>
 
-              <div className='buttons'>
-                <button className='fill' onClick={stripeHandleClick}>
-                  Add credit card
-                </button>
-
-                <Link href='#about'>
-                  <button className='outline'>Learn more</button>
-                </Link>
-              </div>
-            </div>
-
-            <div className='image'>
-              $1 / 3mo.
-              <CreditCard />
+              <button onClick={stripeHandleClick}>Add credit card</button>
             </div>
           </div>
         </div>
@@ -88,7 +60,7 @@ export default function Hero() {
           }
         }
 
-        @media (min-width: 900px) {
+        @media (min-width: 1100px) {
           .container {
             display: grid;
             grid-template-columns: 660px 1fr;
@@ -99,55 +71,56 @@ export default function Hero() {
         .content {
           position: relative;
           margin: 40px 0 0;
-          padding: 0 0 60px;
+          padding: 0 0 40px;
           color: #fff;
           transition: padding ease-in-out 1s;
         }
 
-        @media (min-width: 600px) {
-          .content {
-            padding: 0 50px 100px;
-          }
-        }
-
-        @media (min-width: 900px) {
-          .content {
-            /*max-width: 660px;*/
-          }
-        }
-
-        @media (min-width: 1500px) {
+        @media (min-width: 700px) {
           .content {
             padding: 0 50px 60px;
           }
         }
 
         h1.title {
-          font-size: 40px;
+          font-size: 32px;
           line-height: 1.2;
+        }
+
+        @media (min-width: 700px) {
+          h1.title {
+            font-size: 40px;
+          }
         }
 
         h2 {
           margin: 20px 0 50px;
-          font-size: 20px;
+          font-size: 18px;
           font-weight: 400;
         }
 
-        @media (max-width: 600px) {
+        @media (min-width: 700px) {
+          h2 {
+            font-size: 20px;
+          }
+        }
+
+        @media (max-width: 700px) {
           .buttons {
             text-align: center;
           }
         }
 
         button {
+          display: inline-block;
           position: relative;
           top: 0;
           min-width: 175px;
-          margin: 0 10px 20px;
+          margin: 0 0 20px;
           padding: 10px;
-          border: 2px solid transparent;
+          border: 2px solid #f85b5b;
+          background: #f85b5b;
           border-radius: 5px;
-          background: #eee;
           color: #fff;
           font-family: 'Roboto', sans-serif;
           font-size: 18px;
@@ -156,29 +129,9 @@ export default function Hero() {
           transition: all ease-in-out 0.2s;
         }
 
-        @media (min-width: 600px) {
-          button {
-            margin: 0;
-          }
-
-          button.fill {
-            margin: 0 20px 0 0;
-          }
-        }
-
         button:hover {
           top: 2px;
           box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
-        }
-
-        button.fill {
-          border: 2px solid #f85b5b;
-          background: #f85b5b;
-        }
-
-        button.outline {
-          border-color: #fff;
-          background: none;
         }
 
         .image {

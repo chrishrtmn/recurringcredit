@@ -5,7 +5,7 @@ export default function Newsletter() {
     <>
       <div className='newsletter'>
         <div className='wrapper'>
-          <h2>Sign up for our newsletter</h2>
+          <h2>Sign up for our free newsletter</h2>
           <p>Get notified by email when we release new updates and articles.</p>
         </div>
 

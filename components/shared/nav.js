@@ -1,21 +1,10 @@
 import Link from 'next/link'
+import ActiveLink from '../../libraries/nav-active-class'
 
 export default function Nav() {
   return (
     <>
       <nav>
-        {/*<a>Light/Dark (Minimalist) Mode</a>*/}
-
-        {/*
-          <Link href='/about'>
-            <a>About</a>
-          </Link>
-          
-          <Link href='/blog'>
-            <a>Blog</a>
-          </Link>
-        */}
-
         <Link href='/'>
           <a>Home</a>
         </Link>
@@ -24,38 +13,32 @@ export default function Nav() {
           <a>Pricing</a>
         </Link>
 
-        {/*
-        <Link href='/faq'>
-          <a>FAQ</a>
-        </Link>
-        */}
-
-        <Link href='/contact'>
+        <ActiveLink activeClassName='active' href='/contact'>
           <a>Contact</a>
-        </Link>
-
-        {/*<a onClick={stripeHandleClick}>Add Credit Card</a>*/}
+        </ActiveLink>
 
         <a
-          className='portal'
+          className='outline'
           href='https://mysuperportal.com/access/recurringcredit/'
-          style={{
-            border: '1px solid #fff',
-            borderRadius: '10px',
-            padding: '3px 10px 3px',
-          }}
         >
-          Customer Login
+          Login
         </a>
       </nav>
 
       <style jsx>{`
         nav {
+          display: none;
           float: right;
           margin: 1px 0 0;
         }
 
-        nav a {
+        @media (min-width: 700px) {
+          nav {
+            display: inline-block;
+          }
+        }
+
+        a {
           display: inline-block;
           margin: 0 0 0 30px;
           padding: 5px 0 2px;
@@ -67,13 +50,24 @@ export default function Nav() {
           transition: all ease-in-out 0.2s;
         }
 
-        nav a:first-of-type {
+        a:first-of-type {
           margin-left: 0;
         }
 
-        nav a:hover {
+        a:hover {
           text-decoration: none;
           border-bottom: 2px solid #fff;
+        }
+
+        .outline {
+          border: 2px solid #fff;
+          border-radius: 4px;
+          padding: 3px 10px;
+        }
+
+        .outline:hover {
+          background: #fff;
+          color: #112a6b;
         }
       `}</style>
     </>

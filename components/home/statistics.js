@@ -1,4 +1,4 @@
-export default function MetricsCounts() {
+export default function Statistics() {
   return (
     <>
       <h2>Credit Worthiness</h2>

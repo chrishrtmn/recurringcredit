@@ -1,5 +1,6 @@
 import Layout from '../components/layout'
 import Header from '../components/shared/header'
+import Faq from '../components/faq'
 import FormContact from '../libraries/form-contact'
 import Newsletter from '../components/shared/newsletter'
 
@@ -21,6 +22,8 @@ export default function Contact({ title, description, ...props }) {
             <p>Provide feedback on our site, service or other!</p>
 
             <FormContact />
+
+            <Faq />
           </div>
         </main>
 
