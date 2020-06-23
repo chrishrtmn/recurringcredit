@@ -7,7 +7,7 @@ export default function Faq() {
         <h2>Frequently Asked Questions</h2>
 
         <div className='question'>
-          <strong>Why is the price not $0.01 per card?</strong>
+          <strong>Why is the price not $0.01 cent per card?</strong>
           <p>To cover the costs of payment processing fees.</p>
         </div>
 
@@ -33,10 +33,7 @@ export default function Faq() {
             cards?
           </strong>
           <p>
-            This service is mostly for people with 1-2 credit cards that don't
-            want to have to manage them and keep track of whether their prices
-            haven't changed or something. Knowing this is $1 a month ($3/every 3
-            months) is easier to budget and expect.
+            Knowing this is $1 every 3 months is easier to expect and budget.
           </p>
         </div>
       </div>

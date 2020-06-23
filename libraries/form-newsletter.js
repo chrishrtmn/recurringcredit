@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-export default function FormNewsletter() {
-  const [contact, setContact] = useState({
+export default function FormContact() {
+  const [values, setValues] = useState({
     email: '',
   })
 
@@ -11,14 +11,14 @@ export default function FormNewsletter() {
   })
 
   const handleChange = (e) =>
-    setContact({ ...contact, [e.target.name]: e.target.value })
+    setValues({ ...values, [e.target.name]: e.target.value })
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
       const res = await fetch(`https://formspree.io/mpzylqzk`, {
         method: 'POST',
-        body: JSON.stringify(contact),
+        body: JSON.stringify(values),
         headers: { 'Content-Type': 'application/json' },
       })
 
@@ -27,7 +27,7 @@ export default function FormNewsletter() {
       if (json.success) {
         setResponse({
           type: 'success',
-          message: 'Thank you for subscribing to our newsletter.',
+          message: 'Thank you for signing up for our newsletter.',
         })
       } else {
         setResponse({
@@ -47,14 +47,14 @@ export default function FormNewsletter() {
   return (
     <>
       <form
-        action='https://api.staticforms.xyz/submit'
+        action='https://formspree.io/mpzylqzk'
         method='post'
         onSubmit={handleSubmit}
       >
         <input
           className='input'
           type='email'
-          name='email'
+          name='_replyto'
           placeholder='Email'
           aria-label='Your email'
           onChange={handleChange}
@@ -64,17 +64,18 @@ export default function FormNewsletter() {
         <button
           className='button'
           type='submit'
+          /*disabled={isSubmitting}*/
           aria-label='Submit newsletter form'
         >
           Submit
         </button>
       </form>
 
-      {response.type === 'success' && (
-        <div className='message success'>{response.message}</div>
-      )}
       {response.type === 'error' && (
-        <div className='message error'>{response.message}</div>
+        <div className='message error'>Error: {response.message}</div>
+      )}
+      {response.type !== 'error' && response.message && (
+        <p>Message: {response.message}</p>
       )}
     </>
   )

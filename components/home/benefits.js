@@ -28,12 +28,11 @@ export default function Benefits() {
 
       <style jsx>{`
         .benefits {
-          padding: 60px 0;
           text-align: center;
         }
 
         .benefits div {
-          padding: 60px 0 0;
+          padding: 0 0 60px;
         }
       `}</style>
     </>
