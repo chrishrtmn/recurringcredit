@@ -11,10 +11,16 @@ export default function Index({ title, description, ...props }) {
 
         <main>
           <div className='wrapper'>
-            <p className='introduction'>
-              Prevent credit dormancy and inactivity leading to closure and
-              hurting your credit history.
-            </p>
+            <div className='introduction'>
+              <p>
+                Prevent credit dormancy and inactivity leading to closure and
+                hurting your credit history.
+              </p>
+              <p style={{ fontWeight: 'bold' }}>
+                Store cards can close within 3 months of non-activity whereas
+                banking cards can take up to 6 months.
+              </p>
+            </div>
 
             {/*
             <UseCases/>

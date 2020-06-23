@@ -20,12 +20,15 @@ export default function Footer() {
               <Link href='/disclaimer'>
                 <a>Disclaimer</a>
               </Link>
+            </div>
+            <div className='service-links'>
               {/*
-            <Link href='/cancellation'>
-              <a>Cancellation</a>
-              eg: https://www.youneedabudget.com/cancellation/
-            </Link>
-            */}
+              <Link href='/cancellation'>
+                <a>Cancellation</a>
+                eg: https://www.youneedabudget.com/cancellation/
+              </Link>
+              */}
+              <a>Stripe is our payment processor.</a>
             </div>
           </div>
 

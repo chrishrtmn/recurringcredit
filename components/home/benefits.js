@@ -31,8 +31,8 @@ export default function Benefits() {
           <div>
             <h3>Keep score.</h3>
             <p>
-              Credit companies may close your accounts with no notice, causing a
-              drop in your credit score.
+              Credit companies may close your accounts without notice, causing a
+              decrease in your credit score.
             </p>
           </div>
         </div>

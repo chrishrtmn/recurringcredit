@@ -5,9 +5,9 @@ export default function Nav() {
   return (
     <>
       <nav>
-        <Link href='/'>
-          <a>Home</a>
-        </Link>
+        <ActiveLink activeClassName='active' href='/'>
+          <a className='home'>Home</a>
+        </ActiveLink>
 
         {/*
         <Link href='/#pricing'>
@@ -20,30 +20,27 @@ export default function Nav() {
         </ActiveLink>
 
         <a
-          className='login'
+          className='filled'
           href='https://mysuperportal.com/access/recurringcredit/'
         >
           Login
+        </a>
+
+        <a className='toggle'>
+          <i className='gg-menu'></i>
         </a>
       </nav>
 
       <style jsx>{`
         nav {
-          display: none;
           float: right;
           margin: 1px 0 0;
         }
 
-        @media (min-width: 700px) {
-          nav {
-            display: inline-block;
-          }
-        }
-
         a {
           display: inline-block;
-          margin: 0 0 0 30px;
-          padding: 5px 0 3px;
+          margin: 1px 0 0 15px;
+          padding: 0 0 3px;
           font-size: 18px;
           font-family: 'Roboto', sans-serif;
           text-decoration: none;
@@ -52,25 +49,85 @@ export default function Nav() {
           transition: all ease-in-out 0.2s;
         }
 
+        a:not(.toggle) {
+          display: none;
+        }
+
+        @media (min-width: 700px) {
+          a {
+            margin: 1px 0 0 30px;
+          }
+
+          a:not(.toggle) {
+            display: inline-block;
+          }
+
+          a.toggle {
+            display: none;
+          }
+        }
+
         a:first-of-type {
           margin-left: 0;
         }
 
-        a:not(.login):hover {
-          text-decoration: none;
+        a.active,
+        a:hover {
           border-bottom: 2px solid #fff;
+          text-decoration: none;
         }
 
-        .login {
+        a.home.active {
+          display: none;
+        }
+
+        .filled {
+          cursor: pointer;
           padding: 3px 10px;
+          border: 0;
           border-radius: 4px;
           background: #fff;
           color: var(--color-primary);
         }
 
-        .login:hover {
+        .filled:hover {
           background: var(--color-secondary);
           color: #fff;
+          border: 0;
+        }
+
+        .toggle {
+          padding: 16px 10px;
+          border: 0;
+          cursor: pointer;
+        }
+
+        .toggle:hover {
+          border: 0;
+          color: var(--color-secondary);
+        }
+
+        .gg-menu,
+        .gg-menu::after,
+        .gg-menu::before {
+          box-sizing: border-box;
+          position: relative;
+          display: block;
+          width: 20px;
+          height: 2px;
+          border-radius: 3px;
+          background: currentColor;
+        }
+
+        .gg-menu::after,
+        .gg-menu::before {
+          content: '';
+          position: absolute;
+          top: -6px;
+        }
+
+        .gg-menu::after {
+          top: 6px;
         }
       `}</style>
     </>

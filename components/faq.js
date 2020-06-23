@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Faq() {
   return (
     <>
-      <div className='wrapper' style={{ textAlign: 'center' }}>
+      <div className='faqs'>
         <h2>Frequently Asked Questions</h2>
 
         <div className='question'>
@@ -37,6 +37,23 @@ export default function Faq() {
           </p>
         </div>
       </div>
+
+      <style jsx>{`
+        .faqs {
+          margin: 60px 0 0;
+          padding: 60px 0;
+          text-align: center;
+          border-top: 3px solid var(--color-base);
+        }
+
+        h2 {
+          padding: 0 0 40px;
+        }
+
+        .question:not(:last-of-type) {
+          padding: 0 0 40px;
+        }
+      `}</style>
     </>
   )
 }

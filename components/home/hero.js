@@ -116,8 +116,6 @@ export default function Hero() {
 
         button {
           display: inline-block;
-          position: relative;
-          top: 0;
           min-width: 175px;
           margin: 0 0 20px;
           padding: 10px;
@@ -133,7 +131,6 @@ export default function Hero() {
         }
 
         button:hover {
-          top: 2px;
           box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
         }
 

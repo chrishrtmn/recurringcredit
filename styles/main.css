@@ -60,6 +60,11 @@ img {
   display: block;
 }
 
+img:not([alt]) {
+  outline: 2px dashed pink;
+  filter: blur(10px);
+}
+
 input,
 button,
 textarea,
@@ -104,4 +109,17 @@ a {
   content: '';
   display: table;
   clear: both;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+[hidden] {
+  display: none !important;
 }
