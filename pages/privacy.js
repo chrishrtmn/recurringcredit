@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Layout from '../components/layout'
 import Header from '../components/shared/header'
 
@@ -264,7 +263,7 @@ export default function Privacy({ title, description, ...props }) {
             </p>
 
             <p>
-              <em>This page was last updated on June 18, 2020.</em>
+              <em>This page was last updated on July 1, 2020.</em>
             </p>
           </div>
         </main>

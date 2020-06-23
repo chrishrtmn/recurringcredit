@@ -69,9 +69,15 @@ export default function Index({ title, description, ...props }) {
         .introduction {
           max-width: 900px;
           margin: 0 auto;
-          padding: 40px 0 60px;
+          padding: 40px 0 80px;
           text-align: center;
           font-size: 18px;
+        }
+
+        @media (min-width: 1100px) {
+          .introduction {
+            padding: 80px 0 120px;
+          }
         }
       `}</style>
     </>

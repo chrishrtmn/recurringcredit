@@ -20,7 +20,7 @@ export default function Nav() {
         </ActiveLink>
 
         <a
-          className='outline'
+          className='login'
           href='https://mysuperportal.com/access/recurringcredit/'
         >
           Login
@@ -43,7 +43,7 @@ export default function Nav() {
         a {
           display: inline-block;
           margin: 0 0 0 30px;
-          padding: 5px 0 2px;
+          padding: 5px 0 3px;
           font-size: 18px;
           font-family: 'Roboto', sans-serif;
           text-decoration: none;
@@ -56,20 +56,21 @@ export default function Nav() {
           margin-left: 0;
         }
 
-        a:hover {
+        a:not(.login):hover {
           text-decoration: none;
           border-bottom: 2px solid #fff;
         }
 
-        .outline {
-          border: 2px solid #fff;
-          border-radius: 4px;
+        .login {
           padding: 3px 10px;
+          border-radius: 4px;
+          background: #fff;
+          color: var(--color-primary);
         }
 
-        .outline:hover {
-          background: #fff;
-          color: #112a6b;
+        .login:hover {
+          background: var(--color-secondary);
+          color: #fff;
         }
       `}</style>
     </>

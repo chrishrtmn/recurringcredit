@@ -19,6 +19,15 @@ export default function Newsletter() {
           background: #112a6b;
           color: #fff;
         }
+
+        img {
+          max-width: 200px;
+          margin: 0 auto 20px;
+        }
+
+        p {
+          margin: 0 0 20px;
+        }
       `}</style>
     </>
   )

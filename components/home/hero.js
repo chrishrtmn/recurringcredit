@@ -22,6 +22,8 @@ export default function Hero() {
 
               <button onClick={stripeHandleClick}>Add credit card</button>
             </div>
+
+            <img src='/images/general/cards.svg' alt='' />
           </div>
         </div>
       </div>
@@ -65,6 +67,7 @@ export default function Hero() {
             display: grid;
             grid-template-columns: 660px 1fr;
             grid-gap: 40px;
+            position: relative;
           }
         }
 
@@ -134,15 +137,25 @@ export default function Hero() {
           box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
         }
 
-        .image {
+        img {
           display: none;
         }
 
-        @media (min-width: 900px) {
-          .image {
+        @media (min-width: 1100px) {
+          img {
             display: inline-block;
-            position: relative;
+            position: absolute;
+            right: 0;
+            bottom: 20px;
             z-index: 1;
+            max-width: 350px;
+            transition: bottom ease-in-out 1s;
+          }
+        }
+
+        @media (min-width: 1500px) {
+          img {
+            bottom: 60px;
           }
         }
       `}</style>

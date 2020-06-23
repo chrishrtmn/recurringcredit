@@ -29,12 +29,6 @@ export default function Logo() {
           border-radius: 4px;
           font-size: 20px;
           font-weight: 400;
-          box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
-          transition: all ease-in-out 0.2s;
-        }
-
-        a:hover span {
-          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
         }
       `}</style>
     </>
