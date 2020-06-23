@@ -9,9 +9,11 @@ export default function Nav() {
           <a>Home</a>
         </Link>
 
+        {/*
         <Link href='/#pricing'>
           <a>Pricing</a>
         </Link>
+        */}
 
         <ActiveLink activeClassName='active' href='/contact'>
           <a>Contact</a>
