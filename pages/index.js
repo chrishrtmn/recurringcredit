@@ -1,6 +1,7 @@
 import Layout from '../components/layout'
 import Hero from '../components/home/hero'
 import Benefits from '../components/home/benefits'
+import PricingFaq from '../components/home/pricing-faq'
 import Newsletter from '../components/shared/newsletter'
 
 export default function Index({ title, description, ...props }) {
@@ -11,16 +12,9 @@ export default function Index({ title, description, ...props }) {
 
         <main>
           <div className='wrapper'>
-            <div className='introduction'>
-              <p>
-                Prevent credit dormancy and inactivity leading to closure and
-                hurting your credit history.
-              </p>
-              <p style={{ fontWeight: 'bold' }}>
-                Store cards can close within 3 months of non-activity whereas
-                banking cards can take up to 6 months.
-              </p>
-            </div>
+            {/*
+            <Introduction />
+            */}
 
             {/*
             <UseCases/>
@@ -42,9 +36,7 @@ export default function Index({ title, description, ...props }) {
             </div>
             */}
 
-            {/*
-            <Pricing />
-            */}
+            <PricingFaq />
 
             {/*
             <Statistics />
@@ -70,22 +62,6 @@ export default function Index({ title, description, ...props }) {
           <Newsletter />
         </main>
       </Layout>
-
-      <style jsx>{`
-        .introduction {
-          max-width: 900px;
-          margin: 0 auto;
-          padding: 40px 0 80px;
-          text-align: center;
-          font-size: 18px;
-        }
-
-        @media (min-width: 1100px) {
-          .introduction {
-            padding: 80px 0 120px;
-          }
-        }
-      `}</style>
     </>
   )
 }

@@ -20,14 +20,10 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 - TODAY:
 
-  - Home: Introduction copy
-  - Home: Add and style Pricing section
-  - Home: Add and style CTA box + Questions box
+  - Stripe Portal: Check if works
+  - Stripe Success: Copy updates
 
 ---
-
-- Stripe Portal: Check if works
-- Stripe Success: Copy updates
 
 - Global: Mobile menu button component
 - Global: Footer links + social icons

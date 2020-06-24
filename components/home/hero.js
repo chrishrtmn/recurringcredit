@@ -17,7 +17,7 @@ export default function Hero() {
 
               <h2>
                 A simple service to help keep your credit cards open and score
-                history active.
+                history active. {/*Get your credit back on autopilot.*/}
               </h2>
 
               <button onClick={stripeHandleClick}>Add credit card</button>
@@ -73,7 +73,8 @@ export default function Hero() {
 
         .content {
           position: relative;
-          margin: 40px 0 0;
+          max-width: 800px;
+          margin: 60px 0 0;
           padding: 0 0 40px;
           color: #fff;
           transition: padding ease-in-out 1s;

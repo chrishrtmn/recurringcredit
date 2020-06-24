@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Faq() {
   return (
     <>
-      <div className='faqs'>
+      <div id='faqs' className='faqs'>
         <h2>Frequently Asked Questions</h2>
 
         <div className='question'>
@@ -24,7 +24,7 @@ export default function Faq() {
 
         <div className='question'>
           <strong>When will my card be charged?</strong>
-          <p>3 months to the day you subscribed with a credit card</p>
+          <p>3 months to the day you subscribed with a credit card.</p>
         </div>
 
         <div className='question'>
@@ -33,25 +33,37 @@ export default function Faq() {
             cards?
           </strong>
           <p>
-            Knowing this is $1 every 3 months is easier to expect and budget.
+            Our service is just $1 every 3 months, making it easier to expect
+            and budget.
           </p>
+          <p>Other subscriptions may change their prices unexpectedly.</p>
         </div>
       </div>
 
       <style jsx>{`
         .faqs {
-          margin: 60px 0 0;
+          margin: 60px 0 20px;
           padding: 60px 0;
           text-align: center;
-          border-top: 3px solid var(--color-base);
+          border-top: 3px solid var(--color-base-light);
         }
 
         h2 {
+          font-size: 32px;
           padding: 0 0 40px;
         }
 
         .question:not(:last-of-type) {
-          padding: 0 0 40px;
+          padding: 0 0 60px;
+        }
+
+        .question strong {
+          font-size: 20px;
+        }
+
+        .question p {
+          font-size: 18px;
+          color: var(--color-base-light);
         }
       `}</style>
     </>

@@ -17,6 +17,10 @@ export default function Cancel({ title, description, ...props }) {
               KNOWING YOURE ONLY PAYING $1 EVERY 3 MONTHS.
             </p>
             <p>
+              We recommend putting your credit cards on autopay so you become
+              worry-free.
+            </p>
+            <p>
               <Link href='/'>
                 <a>Add another card</a>
               </Link>

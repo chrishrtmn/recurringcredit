@@ -12,7 +12,7 @@ export default function Contact({ title, description, ...props }) {
 
         <main>
           <div className='wrapper'>
-            <h2>Contact</h2>
+            <h1>Contact</h1>
 
             <p>
               Please contact us if you are having difficulties with
@@ -29,6 +29,16 @@ export default function Contact({ title, description, ...props }) {
 
         <Newsletter />
       </Layout>
+
+      <style jsx>{`
+        h1 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      `}</style>
     </>
   )
 }

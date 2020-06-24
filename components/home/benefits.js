@@ -4,6 +4,21 @@ export default function Benefits() {
   return (
     <>
       <div className='container'>
+        {/*
+        <div className='autopilot'>
+          <h2>Get your credit back on autopilot.</h2>
+          <p>
+            A simple transaction can help prevent credit dormancy and
+            inactivity.
+          </p>
+        </div>
+        */}
+
+        <div className='benefits'>
+          <h2>Benefits</h2>
+          <p>How our service can help</p>
+        </div>
+
         <div className='item clear'>
           <img src='/images/general/payment.svg' alt='' />
           <div>
@@ -26,7 +41,7 @@ export default function Benefits() {
           </div>
         </div>
 
-        <div className='item clear'>
+        <div className='item last clear'>
           <img src='/images/general/chart.svg' alt='' />
           <div>
             <h3>Keep score.</h3>
@@ -40,13 +55,44 @@ export default function Benefits() {
 
       <style jsx>{`
         .container {
-          max-width: 900px;
+          max-width: 960px;
           margin: 0 auto;
+        }
+
+        .benefits {
+          margin: 20px 0;
+          text-align: center;
+          transition: margin ease-in-out 1s;
+        }
+
+        .benefits h2 {
+          font-size: 28px;
+        }
+
+        @media (min-width: 700px) {
+          .benefits {
+            margin: 40px 0 20px;
+          }
+
+          .benefits h2 {
+            font-size: 32px;
+          }
+        }
+
+        @media (min-width: 1500px) {
+          .benefits {
+            margin: 80px 0 20px;
+          }
+        }
+
+        .benefits p {
+          font-size: 18px;
+          color: var(--color-base-light);
         }
 
         .item {
           width: 100%;
-          padding: 60px 0;
+          padding: 40px 0;
           text-align: center;
         }
 
@@ -60,8 +106,14 @@ export default function Benefits() {
           }
         }
 
-        .item:last-of-type {
-          padding: 60px 0 120px;
+        .item.last {
+          padding: 60px 0;
+        }
+
+        @media (min-width: 700px) {
+          .item.last {
+            padding: 40px 0 80px;
+          }
         }
 
         .item div {
@@ -74,31 +126,37 @@ export default function Benefits() {
             max-width: 500px;
             padding: 60px 0 0;
           }
+
+          .item.right div {
+            float: right;
+          }
         }
 
         h3 {
-          font-size: 24px;
+          font-size: 20px;
         }
 
         @media (min-width: 700px) {
           h3 {
-            font-size: 28px;
+            font-size: 22px;
           }
         }
 
-        p {
+        .item p {
           font-size: 18px;
+          color: var(--color-base-light);
         }
 
         img {
           max-width: 250px;
+          max-height: 220px;
           margin: 0 auto;
         }
 
         @media (min-width: 700px) {
           img {
             float: left;
-            margin: 0 40px 0;
+            margin: 0 40px 0 0;
           }
 
           .item.right img {
