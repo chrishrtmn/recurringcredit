@@ -97,6 +97,7 @@ export default function Nav() {
         }
 
         .toggle {
+          margin: 1px -10px 0 15px;
           padding: 16px 10px;
           border: 0;
           cursor: pointer;

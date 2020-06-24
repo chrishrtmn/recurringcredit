@@ -46,7 +46,7 @@ export default function Benefits() {
 
         .item {
           width: 100%;
-          padding: 0 0 60px;
+          padding: 60px 0;
           text-align: center;
         }
 
@@ -61,7 +61,7 @@ export default function Benefits() {
         }
 
         .item:last-of-type {
-          padding: 0 0 120px;
+          padding: 60px 0 120px;
         }
 
         .item div {

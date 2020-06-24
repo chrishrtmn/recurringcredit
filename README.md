@@ -20,41 +20,31 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 - TODAY:
 
-  - Global: Mobile menu button component
   - Home: Introduction copy
   - Home: Add and style Pricing section
   - Home: Add and style CTA box + Questions box
 
-- TOMORROW:
-
-  - Stripe Portal: Check if works
-  - Success: Copy updates
-
 ---
 
-- Global:
+- Stripe Portal: Check if works
+- Stripe Success: Copy updates
 
-  - Footer links + social icons
-  - Subscribe to newsletter form - get response/redirect working
+- Global: Mobile menu button component
+- Global: Footer links + social icons
+- Global: Newsletter form response/redirect
 
-- Contact:
-
-  - Get form response/redirect working
-  - Style form
-  - Add accordion component for FAQ
-  - Style FAQ
+- Contact: Form response/redirect
+- Contact: Style form
 
 - Home: Hero image/graphic update colors
-
-- Stripe subscription page:
-
-  - Copy updates
-  - Color updates
 
 ---
 
 ## Post-launch to-do list
 
+- Contact: Style FAQ
+- Contact: Add accordion component for FAQ
+- Stripe subscription page: Color updates
 - Integrate framer.com animations
 - Add Blog page + Posts
 - Add About page

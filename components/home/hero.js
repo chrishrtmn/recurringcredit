@@ -142,7 +142,7 @@ export default function Hero() {
           img {
             display: inline-block;
             position: absolute;
-            right: 0;
+            right: 60px;
             bottom: 20px;
             z-index: 1;
             max-width: 350px;
