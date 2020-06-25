@@ -107,6 +107,53 @@ export default function FormContact() {
       {response.type !== 'error' && response.message && (
         <p>Message: {response.message}</p>
       )}
+
+      <style jsx>{`
+        form {
+          margin: 40px 0 0 20px;
+        }
+
+        input {
+          width: calc(100% - 20px);
+          margin: 0 0 20px 0;
+          padding: 5px 10px;
+          border: 1px solid #d9d9d9;
+        }
+
+        @media (min-width: 700px) {
+          input {
+            width: calc(50% - 20px);
+            margin: 0 20px 20px 0;
+          }
+        }
+
+        textarea {
+          width: calc(100% - 20px);
+          margin: 0 0 20px 0;
+          padding: 5px 10px;
+          border: 1px solid #d9d9d9;
+        }
+
+        button {
+          display: inline-block;
+          min-width: 175px;
+          margin: 0 0 20px;
+          padding: 10px;
+          border: 2px solid var(--color-primary);
+          background: var(--color-primary);
+          border-radius: 5px;
+          color: #fff;
+          font-family: 'Roboto', sans-serif;
+          font-size: 18px;
+          cursor: pointer;
+          box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+          transition: all ease-in-out 0.2s;
+        }
+
+        button:hover {
+          box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+        }
+      `}</style>
     </>
   )
 }

@@ -26,7 +26,6 @@ Visit [http://localhost:3000](http://localhost:3000)
 - Global: Newsletter form response/redirect
 
 - Global: Style newsletter form
-- Contact: Style form
 
 ---
 

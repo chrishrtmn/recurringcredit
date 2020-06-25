@@ -54,7 +54,7 @@ export default function Faq() {
         }
 
         .question:not(:last-of-type) {
-          padding: 0 0 60px;
+          padding: 0 0 40px;
         }
 
         .question strong {
