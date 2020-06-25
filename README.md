@@ -18,8 +18,8 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ## Pre-launch to-do list
 
-- Stripe Portal: Check if works
 - Stripe Success: Copy updates
+- Stripe Portal: Check if works
 - Global: Mobile menu button component open/close & styling
 
 - Form: Contact: Response/redirect

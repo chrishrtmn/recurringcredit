@@ -1,5 +1,3 @@
-import { Cards, Thinking } from '../../libraries/constants-svg'
-
 export default function Benefits() {
   return (
     <>
@@ -16,7 +14,7 @@ export default function Benefits() {
 
         <div className='benefits'>
           <h2>Benefits</h2>
-          <p>How our service can help</p>
+          <p>What we can do to help</p>
         </div>
 
         <div className='item clear'>

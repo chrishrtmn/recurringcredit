@@ -86,7 +86,7 @@ export default function PricingFaq() {
 
         @media (min-width: 700px) {
           .get-started p {
-            font-size: 20px;
+            font-size: 18px;
           }
         }
 
@@ -131,9 +131,6 @@ export default function PricingFaq() {
           font-size: 22px;
         }
 
-        .questions {
-        }
-
         @media (min-width: 700px) {
           .questions {
             border-top: 40px solid transparent;
@@ -146,8 +143,8 @@ export default function PricingFaq() {
         }
 
         @media (min-width: 700px) {
-          .question p {
-            font-size: 20px;
+          .questions p {
+            font-size: 18px;
           }
         }
 

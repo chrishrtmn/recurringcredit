@@ -39,11 +39,21 @@ export default function Contact({ title, description, ...props }) {
         }
 
         h1 {
-          font-size: 40px;
+          font-size: 34px;
         }
 
         p {
-          font-size: 18px;
+          font-size: 16px;
+        }
+
+        @media (min-width: 700px) {
+          h1 {
+            font-size: 40px;
+          }
+
+          p {
+            font-size: 18px;
+          }
         }
       `}</style>
     </>

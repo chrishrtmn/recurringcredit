@@ -1,6 +1,5 @@
 import stripeHandleClick from '../../libraries/stripe-handle-click'
 import Header from '../shared/header'
-import { CardOutline } from '../../libraries/constants-svg'
 
 export default function Hero() {
   return (
@@ -16,8 +15,8 @@ export default function Hero() {
               <h1 className='title'>Prevent credit card closures.</h1>
 
               <h2>
-                A simple service to help keep your credit cards open and score
-                history active. {/*Get your credit back on autopilot.*/}
+                A simple recurring subscription to help keep your credit cards
+                active and protect your creditworthiness.
               </h2>
 
               <button onClick={stripeHandleClick}>Add credit card</button>

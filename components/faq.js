@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export default function Faq() {
   return (
     <>
@@ -40,10 +38,10 @@ export default function Faq() {
             cards?
           </strong>
           <p>
-            Our service is just $1 every 3 months, making it easier to expect
-            and budget.
+            Other subscriptions may change their prices unexpectedly while our
+            service will remain just $1 every 3 months; making it easier to
+            expect and budget.
           </p>
-          <p>Other subscriptions may change their prices unexpectedly.</p>
         </div>
       </div>
 

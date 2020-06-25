@@ -143,6 +143,10 @@ export default function Footer() {
           top: 2px;
         }
 
+        .gg-facebook {
+          height: 18px;
+        }
+
         .gg-twitter::after,
         .gg-twitter::before {
           content: '';

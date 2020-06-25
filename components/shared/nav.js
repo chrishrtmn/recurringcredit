@@ -22,6 +22,7 @@ export default function Nav() {
         <a
           className='filled'
           href='https://mysuperportal.com/access/recurringcredit/'
+          target='_blank'
         >
           Login
         </a>
