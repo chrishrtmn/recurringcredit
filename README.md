@@ -18,21 +18,15 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ## Pre-launch to-do list
 
-- TODAY:
-
-  - Stripe Portal: Check if works
-  - Stripe Success: Copy updates
-
----
-
+- Stripe Portal: Check if works
+- Stripe Success: Copy updates
 - Global: Mobile menu button component
-- Global: Footer links + social icons
-- Global: Newsletter form response/redirect
 
 - Contact: Form response/redirect
-- Contact: Style form
+- Global: Newsletter form response/redirect
 
-- Home: Hero image/graphic update colors
+- Global: Style newsletter form
+- Contact: Style form
 
 ---
 

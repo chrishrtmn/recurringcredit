@@ -86,8 +86,14 @@ export default function Benefits() {
         }
 
         .benefits p {
-          font-size: 18px;
+          font-size: 16px;
           color: var(--color-base-light);
+        }
+
+        @media (min-width: 700px) {
+          .benefits p {
+            font-size: 18px;
+          }
         }
 
         .item {
@@ -143,8 +149,14 @@ export default function Benefits() {
         }
 
         .item p {
-          font-size: 18px;
+          font-size: 16px;
           color: var(--color-base-light);
+        }
+
+        @media (min-width: 700px) {
+          .item p {
+            font-size: 18px;
+          }
         }
 
         img {

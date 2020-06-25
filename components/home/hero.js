@@ -99,7 +99,7 @@ export default function Hero() {
 
         h2 {
           margin: 20px 0 50px;
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 400;
         }
 

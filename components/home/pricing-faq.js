@@ -61,11 +61,17 @@ export default function PricingFaq() {
         }
 
         .item {
-          padding: 40px 60px 60px;
+          padding: 40px 20px;
           border-radius: 10px;
           text-align: center;
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
           /*font-size: clamp(1rem, 2vw, 1.5rem);*/
+        }
+
+        @media (min-width: 700px) {
+          .item {
+            padding: 40px 60px 60px;
+          }
         }
 
         .get-started {
@@ -75,7 +81,13 @@ export default function PricingFaq() {
 
         .get-started p {
           margin: 20px 0;
-          font-size: 20px;
+          font-size: 16px;
+        }
+
+        @media (min-width: 700px) {
+          .get-started p {
+            font-size: 20px;
+          }
         }
 
         .get-started p > span {
@@ -120,12 +132,23 @@ export default function PricingFaq() {
         }
 
         .questions {
-          border-top: 40px solid transparent;
+        }
+
+        @media (min-width: 700px) {
+          .questions {
+            border-top: 40px solid transparent;
+          }
         }
 
         .questions p {
           margin: 20px 0;
-          font-size: 18px;
+          font-size: 16px;
+        }
+
+        @media (min-width: 700px) {
+          .question p {
+            font-size: 20px;
+          }
         }
 
         .questions a {
