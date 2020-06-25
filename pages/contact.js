@@ -12,16 +12,18 @@ export default function Contact({ title, description, ...props }) {
 
         <main>
           <div className='wrapper'>
-            <h1>Contact</h1>
+            <div className='contact'>
+              <h1>Contact</h1>
 
-            <p>
-              Please contact us if you are having difficulties with
-              cancellations or editing your subscription.
-            </p>
+              <p>
+                Please contact us if you are having difficulties with
+                cancellations or editing your subscription.
+              </p>
 
-            <p>Provide feedback on our site, service or other!</p>
+              <p>Provide feedback on our site, service or other!</p>
 
-            <FormContact />
+              <FormContact />
+            </div>
 
             <Faq />
           </div>
@@ -31,6 +33,11 @@ export default function Contact({ title, description, ...props }) {
       </Layout>
 
       <style jsx>{`
+        .contact {
+          padding: 0 0 40px;
+          border-bottom: 3px solid var(--color-base-light);
+        }
+
         h1 {
           font-size: 40px;
         }

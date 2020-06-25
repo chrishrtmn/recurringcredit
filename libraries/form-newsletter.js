@@ -77,6 +77,33 @@ export default function FormContact() {
       {response.type !== 'error' && response.message && (
         <p>Message: {response.message}</p>
       )}
+
+      <style jsx>{`
+        input {
+          margin: 0 10px 0 0;
+          padding: 5px 10px;
+          border: 1px solid #d9d9d9;
+        }
+
+        button {
+          display: inline-block;
+          margin: 0 0 20px;
+          padding: 5px 15px 4px;
+          border: 2px solid var(--color-secondary);
+          background: var(--color-secondary);
+          border-radius: 5px;
+          color: #fff;
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+          cursor: pointer;
+          box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+          transition: all ease-in-out 0.2s;
+        }
+
+        button:hover {
+          box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+        }
+      `}</style>
     </>
   )
 }

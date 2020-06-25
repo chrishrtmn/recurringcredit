@@ -7,8 +7,11 @@ export default function Faq() {
         <h2>Frequently Asked Questions</h2>
 
         <div className='question'>
-          <strong>Why is the price not $0.01 cent per card?</strong>
-          <p>To cover the costs of payment processing fees.</p>
+          <strong>Why is the price not $0.01 cent per card instead?</strong>
+          <p>
+            We only charge $1.00 to cover the costs of payment processing fees
+            on our end and to keep our service operating smoothly.
+          </p>
         </div>
 
         {/*
@@ -24,7 +27,11 @@ export default function Faq() {
 
         <div className='question'>
           <strong>When will my card be charged?</strong>
-          <p>3 months to the day you subscribed with a credit card.</p>
+          <p>
+            3 months to the day you subscribed with a credit card. If it falls
+            on a weekend, the transaction will take place on the next business
+            day.
+          </p>
         </div>
 
         <div className='question'>
@@ -42,15 +49,22 @@ export default function Faq() {
 
       <style jsx>{`
         .faqs {
-          margin: 60px 0 20px;
+          max-width: 900px;
+          margin: 0 auto;
           padding: 60px 0;
           text-align: center;
-          border-top: 3px solid var(--color-base-light);
         }
 
         h2 {
-          font-size: 32px;
+          font-size: 26px;
+          line-height: 1.2;
           padding: 0 0 40px;
+        }
+
+        @media (min-width: 700px) {
+          h2 {
+            font-size: 32px;
+          }
         }
 
         .question:not(:last-of-type) {
@@ -58,12 +72,26 @@ export default function Faq() {
         }
 
         .question strong {
-          font-size: 20px;
+          font-size: 18px;
         }
 
         .question p {
-          font-size: 18px;
+          font-size: 16px;
           color: var(--color-base-light);
+        }
+
+        @media (min-width: 700px) {
+          .faqs {
+            margin: 20px auto 40px;
+          }
+
+          .question strong {
+            font-size: 20px;
+          }
+
+          .question p {
+            font-size: 18px;
+          }
         }
       `}</style>
     </>

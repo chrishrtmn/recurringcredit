@@ -20,12 +20,10 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 - Stripe Portal: Check if works
 - Stripe Success: Copy updates
-- Global: Mobile menu button component
+- Global: Mobile menu button component open/close & styling
 
-- Contact: Form response/redirect
-- Global: Newsletter form response/redirect
-
-- Global: Style newsletter form
+- Form: Contact: Response/redirect
+- Form: Newsletter: Response/redirect
 
 ---
 
