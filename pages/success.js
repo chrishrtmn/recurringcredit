@@ -46,6 +46,11 @@ export default function Cancel({ title, description, ...props }) {
                   <button>Contact us</button>
                 </Link>
               </p>
+              <p>
+                Want to help RecurringCredit grow? Please share us with your
+                network! <br />
+                Twitter - Facebook - Email
+              </p>
             </div>
           </div>
         </main>

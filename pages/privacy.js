@@ -1,5 +1,6 @@
 import Layout from '../components/layout'
 import Header from '../components/shared/header'
+import Newsletter from '../components/shared/newsletter'
 
 export default function Privacy({ title, description, ...props }) {
   return (
@@ -16,16 +17,6 @@ export default function Privacy({ title, description, ...props }) {
             <h1>Welcome to our Privacy Policy</h1>
 
             <h3>Your privacy is critically important to us.</h3>
-
-            <p>RecurringCredit is located at:</p>
-
-            <br />
-
-            <address>
-              RecurringCredit
-              <br />
-              3302985390{' '}
-            </address>
 
             <p>
               It is RecurringCredit's policy to respect your privacy regarding
@@ -267,7 +258,27 @@ export default function Privacy({ title, description, ...props }) {
             </p>
           </div>
         </main>
+
+        <Newsletter />
       </Layout>
+
+      <style jsx>{`
+        .wrapper {
+          margin: 0 auto 60px;
+        }
+
+        h2 {
+          margin: 20px 0 0;
+        }
+
+        p:last-of-type {
+          margin: 20px 0 0;
+        }
+
+        a {
+          color: var(--color-primary);
+        }
+      `}</style>
     </>
   )
 }

@@ -19,17 +19,20 @@ Visit [http://localhost:3000](http://localhost:3000)
 ## Pre-launch to-do list
 
 - Stripe Success: Copy updates
-- Stripe Portal: Check if works
 - Global: Mobile menu button component open/close & styling
 
 - Form: Contact: Response/redirect
 - Form: Newsletter: Response/redirect
 
+- Stripe Portal: Check if works on July 1
+
 ---
 
 ## Post-launch to-do list
 
-- Contact: Style FAQ
+- Set up staging branch
+- Release notes
+- Contact: Style FAQ as accordion with more questions
 - Contact: Add accordion component for FAQ
 - Stripe subscription page: Color updates
 - Integrate framer.com animations
@@ -42,3 +45,4 @@ Visit [http://localhost:3000](http://localhost:3000)
   - Enhanced Element styling options
 - Light/Dark minimalist switcher button
 - Encrypt email from public
+- Setup Chat/Feedback popup
