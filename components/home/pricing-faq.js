@@ -16,7 +16,7 @@ export default function PricingFaq() {
               <span>
                 <sup>$</sup>1.00
               </span>{' '}
-              <em>per card</em>
+              <em>(per card)</em>
             </strong>
           </p>
           <button className='fill' onClick={stripeHandleClick}>
@@ -92,19 +92,26 @@ export default function PricingFaq() {
 
         .get-started p > span {
           color: var(--color-secondary);
-          font-style: italic;
         }
 
         .get-started strong {
-          font-size: 24px;
+          font-size: 16px;
           font-weight: 400;
           line-height: 1;
-          color: var(--color-secondary);
+          color: var(--color-base);
         }
 
         .get-started strong span {
-          font-size: 36px;
+          position: relative;
+          left: -7px;
+          display: block;
+          font-size: 40px;
           font-weight: 700;
+          color: var(--color-secondary);
+        }
+
+        .get-started strong span sup {
+          font-size: 24px;
         }
 
         button {
