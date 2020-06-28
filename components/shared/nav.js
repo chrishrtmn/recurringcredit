@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import ActiveLink from '../../libraries/nav-active-class'
+import { default as NavSidebarToggle } from './nav-sidebar-toggle'
 
-export default function Nav() {
+export default function Nav({ open, ...props }) {
   return (
     <>
       <nav>
@@ -27,9 +28,7 @@ export default function Nav() {
           Login
         </a>
 
-        <a className='toggle'>
-          <i className='gg-menu'></i>
-        </a>
+        <NavSidebarToggle />
       </nav>
 
       <style jsx>{`
@@ -39,7 +38,7 @@ export default function Nav() {
         }
 
         a {
-          display: inline-block;
+          display: none;
           margin: 1px 0 0 15px;
           padding: 0 0 3px;
           font-size: 18px;
@@ -50,21 +49,10 @@ export default function Nav() {
           transition: all ease-in-out 0.2s;
         }
 
-        a:not(.toggle) {
-          display: none;
-        }
-
         @media (min-width: 700px) {
           a {
             margin: 1px 0 0 30px;
-          }
-
-          a:not(.toggle) {
             display: inline-block;
-          }
-
-          a.toggle {
-            display: none;
           }
         }
 
@@ -95,41 +83,6 @@ export default function Nav() {
           background: var(--color-secondary);
           color: #fff;
           border: 0;
-        }
-
-        .toggle {
-          margin: 1px -10px 0 15px;
-          padding: 16px 10px;
-          border: 0;
-          cursor: pointer;
-        }
-
-        .toggle:hover {
-          border: 0;
-          color: var(--color-secondary);
-        }
-
-        .gg-menu,
-        .gg-menu::after,
-        .gg-menu::before {
-          box-sizing: border-box;
-          position: relative;
-          display: block;
-          width: 20px;
-          height: 2px;
-          border-radius: 3px;
-          background: currentColor;
-        }
-
-        .gg-menu::after,
-        .gg-menu::before {
-          content: '';
-          position: absolute;
-          top: -6px;
-        }
-
-        .gg-menu::after {
-          top: 6px;
         }
       `}</style>
     </>
