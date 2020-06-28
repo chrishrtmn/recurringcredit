@@ -16,7 +16,7 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## Pre-launch to-do list
+## Pre soft-launch to-do list (July 1)
 
 - Stripe Success: Copy updates
 - Global: Mobile menu button component open/close & styling
@@ -28,7 +28,7 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## Post-launch to-do list
+## Post soft-launch to-do list (July 2)
 
 - Set up staging branch
 - Release notes
@@ -44,5 +44,10 @@ Visit [http://localhost:3000](http://localhost:3000)
   - Customer Portal
   - Enhanced Element styling options
 - Light/Dark minimalist switcher button
-- Encrypt email from public
+- Encrypt email from public?
 - Setup Chat/Feedback popup
+
+## Pre hard-launch to-do list (July 16?)
+
+- Set up lists/planned out
+- SEO updates, metadata, sitemaps, etc
