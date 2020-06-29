@@ -1,20 +1,21 @@
 import Link from 'next/link'
 import ActiveLink from '../../libraries/nav-active-class'
-import { default as NavSidebarToggle } from './nav-sidebar-toggle'
+import Popup from 'reactjs-popup'
+import NavPopupToggle from './nav-popup-toggle'
+import NavPopup from './nav-popup'
 
-export default function Nav({ open, ...props }) {
+const contentStyle = {
+  width: '80%',
+  border: 'none',
+}
+
+export default function Nav() {
   return (
     <>
       <nav>
         <ActiveLink activeClassName='active' href='/'>
           <a className='home'>Home</a>
         </ActiveLink>
-
-        {/*
-        <Link href='/#pricing'>
-          <a>Pricing</a>
-        </Link>
-        */}
 
         <ActiveLink activeClassName='active' href='/contact'>
           <a>Contact</a>
@@ -28,7 +29,15 @@ export default function Nav({ open, ...props }) {
           Login
         </a>
 
-        <NavSidebarToggle />
+        <Popup
+          trigger={(open) => <NavPopupToggle open={open} />}
+          modal
+          lockScroll={true}
+          overlayStyle={{ background: 'rgba(255,255,255,0.95' }}
+          contentStyle={contentStyle}
+        >
+          {(close) => <NavPopup close={close} />}
+        </Popup>
       </nav>
 
       <style jsx>{`

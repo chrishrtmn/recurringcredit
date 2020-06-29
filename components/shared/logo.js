@@ -11,6 +11,8 @@ export default function Logo() {
 
       <style jsx>{`
         a {
+          /*position: relative;
+          z-index: 99999999;*/
           display: inline-block;
           color: #fff;
           font-family: 'Roboto', sans-serif;
@@ -19,6 +21,10 @@ export default function Logo() {
           font-weight: 500;
           text-decoration: none;
           transition: all ease-in-out 0.2s;
+        }
+
+        header.nav-toggle.open a {
+          color: var(--color-primary);
         }
 
         span {
