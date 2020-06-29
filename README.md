@@ -19,17 +19,18 @@ Visit [http://localhost:3000](http://localhost:3000)
 ## Pre soft-launch to-do list (July 1)
 
 - Stripe Success: Copy updates
-- Global: Mobile menu button component open/close & styling
 
 - Form: Contact: Response/redirect
 - Form: Newsletter: Response/redirect
 
 - Stripe Portal: Check if works on July 1
+- Test everything
 
 ---
 
 ## Post soft-launch to-do list (July 2)
 
+- Browser bugs?
 - Set up staging branch
 - Release notes
 - Contact: Style FAQ as accordion with more questions
