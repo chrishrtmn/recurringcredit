@@ -38,9 +38,9 @@ export default function Faq() {
             cards?
           </strong>
           <p>
-            Other subscriptions may change their prices unexpectedly while our
-            service will remain just $1 every 3 months; making it easier to
-            expect and budget.
+            Most subscriptions have variable pricing and may change unexpectedly
+            while our service will remain static at just $1.00 every 3 months.
+            This makes it easier for you to expect and budget.
           </p>
         </div>
       </div>

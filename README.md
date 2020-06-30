@@ -18,8 +18,6 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ## Pre soft-launch to-do list (July 1)
 
-- Stripe Success: Copy updates
-
 - Form: Contact: Response/redirect
 - Form: Newsletter: Response/redirect
 

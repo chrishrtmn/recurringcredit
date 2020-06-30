@@ -4,5 +4,10 @@
   "descriptionContact": "Contact",
   "descriptionFAQ": "FAQ",
   "descriptionAbout": "About",
-  "descriptionBlog": "Blog"
+  "descriptionBlog": "Blog",
+  "descriptionRelease": "Release notes",
+  "descriptionSuccess": "Successful payment",
+  "descriptionDisclaimer": "Disclaimer",
+  "descriptionPrivacy": "Privacy Policy",
+  "descriptionTerms": "Terms & Conditions"
 }

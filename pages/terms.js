@@ -16,6 +16,8 @@ export default function Terms({ title, description, ...props }) {
           <div className='wrapper'>
             <h1>Terms & Conditions</h1>
 
+            <br />
+
             <p>
               These terms and conditions outline the rules and regulations for
               the use of RecurringCredit's Website.
@@ -394,4 +396,15 @@ export default function Terms({ title, description, ...props }) {
       `}</style>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const configData = await import(`../siteconfig.json`)
+
+  return {
+    props: {
+      title: configData.default.title,
+      description: configData.default.descriptionTerms,
+    },
+  }
 }

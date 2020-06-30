@@ -15,7 +15,7 @@ export default function Privacy({ title, description, ...props }) {
         <main>
           <div className='wrapper'>
             <h1>Welcome to our Privacy Policy</h1>
-
+            <br />
             <h3>Your privacy is critically important to us.</h3>
 
             <p>
@@ -281,4 +281,15 @@ export default function Privacy({ title, description, ...props }) {
       `}</style>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const configData = await import(`../siteconfig.json`)
+
+  return {
+    props: {
+      title: configData.default.title,
+      description: configData.default.descriptionPrivacy,
+    },
+  }
 }

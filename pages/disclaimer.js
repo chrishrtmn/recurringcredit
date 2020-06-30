@@ -123,3 +123,14 @@ export default function Disclaimer({ title, description, ...props }) {
     </>
   )
 }
+
+export async function getStaticProps() {
+  const configData = await import(`../siteconfig.json`)
+
+  return {
+    props: {
+      title: configData.default.title,
+      description: configData.default.descriptionDisclaimer,
+    },
+  }
+}
