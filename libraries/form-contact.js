@@ -14,10 +14,11 @@ export default function FormContact() {
   })
 
   const handleChange = (e) =>
-    setValues({ ...values, [e.target.name]: e.target.value })
+    setValues({ ...values, [e.target.name]: 'e.target.value' })
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
     try {
       const res = await fetch(`https://formspree.io/mjvaogwv`, {
         method: 'POST',
@@ -30,7 +31,8 @@ export default function FormContact() {
       if (json.success) {
         setResponse({
           type: 'success',
-          message: 'Thank you for reaching out to us.',
+          message:
+            'Thank you for reaching out to us. Please allow up to 24 hours for us to respond.',
         })
       } else {
         setResponse({
@@ -42,7 +44,7 @@ export default function FormContact() {
       console.log('An error occurred', e)
       setResponse({
         type: 'error',
-        message: 'An error occured while submitting the form',
+        message: 'An error occurred while submitting the form',
       })
     }
   }
@@ -87,7 +89,7 @@ export default function FormContact() {
         <input
           type='hidden'
           name='_next'
-          value='//recurringcredit.com/contact'
+          value='https://recurringcredit.com/contact'
         />
         */}
 
@@ -101,12 +103,13 @@ export default function FormContact() {
         </button>
       </form>
 
-      {response.type === 'error' && (
-        <div className='message error'>Error: {response.message}</div>
-      )}
-      {response.type !== 'error' && response.message && (
-        <p>Message: {response.message}</p>
-      )}
+      <div className={response.type === 'success' ? 'message success' : ''}>
+        <p>{response.message}</p>
+      </div>
+
+      <div className={response.type === 'error' ? 'message error' : ''}>
+        <p>{response.message}</p>
+      </div>
 
       <style jsx>{`
         form {

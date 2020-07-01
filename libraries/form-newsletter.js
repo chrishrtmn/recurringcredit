@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function FormContact() {
+export default function FormNewsletter() {
   const [values, setValues] = useState({
     email: '',
   })
@@ -39,7 +39,7 @@ export default function FormContact() {
       console.log('An error occurred', e)
       setResponse({
         type: 'error',
-        message: 'An error occured while submitting the form',
+        message: 'An error occurred while submitting the form',
       })
     }
   }
