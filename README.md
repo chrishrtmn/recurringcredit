@@ -16,29 +16,28 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## Post soft-launch to-do list (July 2)
+## Post soft-launch to-do list
 
-- Form: Contact: Response/redirect
-- Form: Newsletter: Response/redirect
-- Browser bugs?
-- Set up staging branch
-- Release notes
+- Form: Contact: Response/redirect (react hook forms)
+- Form: Newsletter: Response/redirect (react hook forms)
 - Contact: Style FAQ as accordion with more questions
-- Contact: Add accordion component for FAQ
-- Stripe subscription page: Color updates
-- Integrate framer.com animations
+- Browser testing
+- Release notes page
+- Roadmap page
 - Add Blog page + Posts
 - Add About page
 - Add/update 404 page -> redirect?
-- Convert styled-jsx to styled-components (with mixins/nesting)
+- Convert styled-jsx to styled-components (with postcss mixins/nesting?)
 - Convert Stripe to client + server integration
   - Customer Portal
   - Enhanced Element styling options
 - Light/Dark minimalist switcher button
-- Encrypt email from public?
+- Integrate framer.com animations
 - Setup Chat/Feedback popup
+- Encrypt email from public?
+- Set up staging branch
 
-## Pre hard-launch to-do list (July 16?)
+## Pre hard-launch to-do list
 
 - Set up lists/planned out
 - SEO updates, metadata, sitemaps, etc
