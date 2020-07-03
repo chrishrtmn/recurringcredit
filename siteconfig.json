@@ -10,5 +10,6 @@
   "descriptionSuccess": "Successful payment",
   "descriptionDisclaimer": "Disclaimer",
   "descriptionPrivacy": "Privacy Policy",
-  "descriptionTerms": "Terms & Conditions"
+  "descriptionTerms": "Terms & Conditions",
+  "descriptionAccessibilityStatement": "Accessibility Statement"
 }
