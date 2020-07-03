@@ -2,8 +2,11 @@
 
 - React.js
 - Next.js
-- Stripe.js
-- styled-components (todo)
+- Stripe.js (Hosted, convert to server-side)
+- Formspree (convert to React Hook Forms)
+- Google Analytics
+- Insights Analytics
+- Styled-JSX (convert to styled-components)
 - Framer animations (todo)
 
 ## To run locally
