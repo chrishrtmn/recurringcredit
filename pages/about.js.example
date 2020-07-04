@@ -10,6 +10,7 @@ const About = ({ title, description, ...props }) => {
         <main>
           <div className='wrapper'>
             <p>This is the about page</p>
+            <p>The founder created RecurringCredit due to personal use cases of: so and so</p>
           </div>
         </main>
       </Layout>

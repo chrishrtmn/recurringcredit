@@ -20,7 +20,9 @@ export default function Contact({ title, description, ...props }) {
                 cancellations or editing your subscription.
               </p>
 
-              <p>Provide feedback on our site, service or other!</p>
+              <br />
+
+              <p>Feel free to provide feedback on our site or service.</p>
 
               <FormContact />
             </div>
@@ -39,6 +41,7 @@ export default function Contact({ title, description, ...props }) {
         }
 
         h1 {
+          margin: 0 0 20px;
           font-size: 34px;
         }
 
