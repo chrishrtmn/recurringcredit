@@ -10,17 +10,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Metrics - Insights */}
-          <script src='https://getinsights.io/static/js/insights.js'></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                insights.init('${process.env.NEXT_PUBLIC_INSIGHT_TRACKING_ID}');
-                insights.trackPages();
-              `,
-            }}
-          />
-
           {/* Metrics - Google Analytics */}
           <script
             async
