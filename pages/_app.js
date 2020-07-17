@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Router from 'next/router'
 import * as gtag from '../libraries/metrics-google-analytics'
 import '../styles/main.css'
+import 'aos/dist/aos.css'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

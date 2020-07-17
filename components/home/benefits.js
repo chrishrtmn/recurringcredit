@@ -1,4 +1,14 @@
+import { useEffect } from 'react'
+import AOS from 'aos'
+
 export default function Benefits() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    })
+  }, [])
+
   return (
     <>
       <div className='container'>
@@ -17,7 +27,7 @@ export default function Benefits() {
           <p>What we can do to help</p>
         </div>
 
-        <div className='item clear'>
+        <div className='item clear' data-aos='fade-right'>
           <img src='/images/general/payment.svg' alt='' />
           <div>
             <h3>Dodge fees.</h3>
@@ -28,7 +38,7 @@ export default function Benefits() {
           </div>
         </div>
 
-        <div className='item right clear'>
+        <div className='item right clear' data-aos='fade-left'>
           <img src='/images/general/ideas.svg' alt='' />
           <div>
             <h3>Avoid rejection.</h3>
@@ -39,7 +49,7 @@ export default function Benefits() {
           </div>
         </div>
 
-        <div className='item last clear'>
+        <div className='item last clear' data-aos='fade-right'>
           <img src='/images/general/chart.svg' alt='' />
           <div>
             <h3>Keep score.</h3>
@@ -122,17 +132,25 @@ export default function Benefits() {
 
         .item div {
           padding: 20px 0 0;
+          margin: 0 auto;
+          max-width: 500px;
         }
 
         @media (min-width: 700px) {
           .item div {
             overflow: hidden;
-            max-width: 500px;
             padding: 60px 0 0;
           }
 
           .item.right div {
+            max-width: none;
+          }
+        }
+
+        @media (min-width: 900px) {
+          .item.right div {
             float: right;
+            max-width: 500px;
           }
         }
 
