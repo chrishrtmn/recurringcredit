@@ -28,7 +28,57 @@ class MyDocument extends Document {
             }}
           />
 
+          {/* Primary Meta Tags */}
+          <meta name='title' content='RecurringCredit' />
+          <meta name='description' content='Prevent credit card closures' />
+
+          {/* Twitter Meta Tags */}
+          <meta name='twitter:card' content='summary' />
+          <meta name='twitter:creator' content='recurringcredit' />
+          <meta property='twitter:url' content='https://recurringcredit.com/' />
+          <meta
+            property='twitter:title'
+            content='RecurringCredit - Prevent credit card closures'
+          />
+          <meta
+            property='twitter:description'
+            content='With RecurringCredit, prevent credit closures and maintain your credit history.'
+          />
+          <meta
+            property='twitter:image'
+            content='https://recurringcredit.com/meta/og-image.png'
+          />
+
+          {/* Open Graph / Facebook Meta Tags*/}
+          <meta property='og:type' content='website' />
+          <meta property='og:url' content='https://recurringcredit.com/' />
+          <meta
+            property='og:title'
+            content='RecurringCredit - Prevent credit card closures'
+          />
+          <meta
+            property='og:description'
+            content='With RecurringCredit, prevent credit closures and maintain your credit history.'
+          />
+          <meta
+            property='og:image'
+            content='https://recurringcredit.com/meta/og-image.png'
+          />
+          {/*
+          <meta property='og:url' content={currentURL} key='ogurl' />
+          <meta property='og:image' content={previewImage} key='ogimage' />
+          <meta property='og:site_name' content={siteName} key='ogsitename' />
+          <meta property='og:title' content={pageTitle} key='ogtitle' />
+          <meta property='og:description' content={description} key='ogdesc' />
+          */}
+
           {/* Favicons */}
+          <meta name='msapplication-TileColor' content='#ffffff' />
+          <meta
+            name='msapplication-TileImage'
+            content='/favicon/ms-icon-144x144.png'
+          />
+          <meta name='theme-color' content='#ffffff' />
           <link
             rel='apple-touch-icon'
             sizes='57x57'
@@ -99,35 +149,15 @@ class MyDocument extends Document {
             href='/favicon/favicon-16x16.png'
           />
           <link rel='manifest' href='/favicon/manifest.json' />
-          <meta name='msapplication-TileColor' content='#ffffff' />
-          <meta
-            name='msapplication-TileImage'
-            content='/favicon/ms-icon-144x144.png'
-          />
-          <meta name='theme-color' content='#ffffff' />
 
           {/* Fonts */}
           <link
             href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap'
             rel='stylesheet'
-          ></link>
+          />
 
           {/* Other Properties */}
-          {/*<meta name='description' content={description} />*/}
           <link rel='alternate' type='application/rss+xml' href='/feed.xml' />
-
-          {/* Twitter */}
-          <meta name='twitter:card' content='summary' key='twcard' />
-          {/*<meta name='twitter:creator' content={twitterHandle} key='twhandle' />*/}
-
-          {/* Open Graph */}
-          {/*
-          <meta property='og:url' content={currentURL} key='ogurl' />
-          <meta property='og:image' content={previewImage} key='ogimage' />
-          <meta property='og:site_name' content={siteName} key='ogsitename' />
-          <meta property='og:title' content={pageTitle} key='ogtitle' />
-          <meta property='og:description' content={description} key='ogdesc' />
-          */}
         </Head>
         <body>
           <Main />

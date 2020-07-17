@@ -115,8 +115,8 @@ export default function Footer() {
         }
 
         @media (min-width: 900px) {
-          .social-links a {
-            margin: 0 0 0 15px;
+          .social-links a:last-of-type {
+            margin: 0;
           }
         }
 
