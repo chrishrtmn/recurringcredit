@@ -6,13 +6,13 @@ export default function Footer() {
   return (
     <>
       <footer className='footer'>
-        <div className='wrapper container'>
+        <div className='container wrapper'>
           <div className='copyright'>
             &copy; <span className='date-year'>{dateYear}</span>{' '}
             RecurringCredit. All rights reserved.
             <div className='legal-links'>
               <Link href='/terms'>
-                <a>Terms & Conditions</a>
+                <a>Terms &amp; Conditions</a>
               </Link>{' '}
               <Link href='/privacy'>
                 <a>Privacy Policy</a>
@@ -162,7 +162,7 @@ export default function Footer() {
           border-left: 4px solid;
           border-bottom: 4px solid;
           border-bottom-left-radius: 6px;
-          background: linear-gradient(to left, currentColor 12px, transparent 0)
+          background: linear-gradient(to left, #666 12px, rgba(0, 0, 0, 0) 0%)
             no-repeat center 2px/10px 4px;
           top: 4px;
         }
@@ -170,7 +170,7 @@ export default function Footer() {
         .gg-twitter::after {
           width: 4px;
           height: 4px;
-          background: currentColor;
+          background: #666;
           border-radius: 20px;
           top: 2px;
           box-shadow: 7px 4px 0, 7px 12px 0;
@@ -196,7 +196,7 @@ export default function Footer() {
         .gg-facebook::after {
           width: 10px;
           height: 4px;
-          background: currentColor;
+          background: #666;
           top: 7px;
           left: 4px;
           transform: skew(-5deg);
