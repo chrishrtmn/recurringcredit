@@ -19,7 +19,13 @@ export default function Hero() {
                 active and protect your creditworthiness.
               </h2>
 
-              <button onClick={stripeHandleClick}>Add credit card</button>
+              {/* <button onClick={stripeHandleClick}>Add credit card</button> */}
+              <a
+                className='button'
+                href='https://buy.stripe.com/8wMbM24cDf086CA9AA'
+              >
+                Add credit card
+              </a>
             </div>
 
             <img src='/images/general/cards.svg' alt='' />
@@ -114,7 +120,7 @@ export default function Hero() {
           }
         }
 
-        button {
+        a.button {
           display: inline-block;
           min-width: 175px;
           margin: 0 0 20px;
@@ -128,9 +134,11 @@ export default function Hero() {
           cursor: pointer;
           box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
           transition: all ease-in-out 0.2s;
+          text-decoration: none;
+          text-align: center;
         }
 
-        button:hover {
+        a.button:hover {
           box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
         }
 

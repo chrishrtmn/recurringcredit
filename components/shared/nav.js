@@ -26,7 +26,7 @@ export default function Nav() {
           href='https://mysuperportal.com/access/recurringcredit/'
           target='_blank'
         >
-          Login
+          Client Portal
         </a>
 
         <Popup

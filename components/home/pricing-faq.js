@@ -19,9 +19,15 @@ export default function PricingFaq() {
               <em>(per card)</em>
             </strong>
           </p>
-          <button className='fill' onClick={stripeHandleClick}>
+          {/* <button className='fill' onClick={stripeHandleClick}>
             Add credit card
-          </button>
+          </button> */}
+          <a
+            className='button'
+            href='https://buy.stripe.com/8wMbM24cDf086CA9AA'
+          >
+            Add credit card
+          </a>
         </div>
 
         <div className='item questions'>
@@ -114,7 +120,7 @@ export default function PricingFaq() {
           font-size: 24px;
         }
 
-        button {
+        a.button {
           display: inline-block;
           min-width: 175px;
           margin: 20px 0 0;
@@ -128,9 +134,11 @@ export default function PricingFaq() {
           cursor: pointer;
           box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
           transition: all ease-in-out 0.2s;
+          text-decoration: none;
+          text-align: center;
         }
 
-        button:hover {
+        a.button:hover {
           box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
         }
 
