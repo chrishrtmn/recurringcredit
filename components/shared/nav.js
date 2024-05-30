@@ -1,8 +1,7 @@
-import Link from 'next/link'
-import ActiveLink from '../../libraries/nav-active-class'
 import Popup from 'reactjs-popup'
-import NavPopupToggle from './nav-popup-toggle'
+import ActiveLink from '../../libraries/nav-active-class'
 import NavPopup from './nav-popup'
+import NavPopupToggle from './nav-popup-toggle'
 
 const contentStyle = {
   width: '80%',
@@ -23,7 +22,7 @@ export default function Nav() {
 
         <a
           className='filled'
-          href='https://mysuperportal.com/access/recurringcredit/'
+          href='https://recurringcredit.superportal.site/portal/login'
           target='_blank'
         >
           Billing Portal

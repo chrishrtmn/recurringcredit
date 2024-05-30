@@ -23,7 +23,7 @@ export default function Cancel({ title, description, ...props }) {
 
               <p className='border-button'>
                 <a
-                  href='https://mysuperportal.com/access/recurringcredit/'
+                  href='https://recurringcredit.superportal.site/portal/login'
                   target='_blank'
                 >
                   Edit Subscription <i className='gg-arrow-right-o'></i>

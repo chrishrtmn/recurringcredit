@@ -37,10 +37,6 @@ export default function Footer() {
               <span className='visually-hidden'>Twitter</span>
               <i className='gg-twitter' aria-hidden='true'></i>
             </a>{' '}
-            <a href='https://facebook.com/recurringcredit'>
-              <span className='visually-hidden'>Facebook</span>
-              <i className='gg-facebook' aria-hidden='true'></i>
-            </a>{' '}
             <a href='mailto:hello@recurringcredit.com'>
               <span className='visually-hidden'>Email</span>
               <i className='gg-mail' aria-hidden='true'></i>

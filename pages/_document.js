@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -31,7 +31,7 @@ class MyDocument extends Document {
             content='https://recurringcredit.com/meta/og-image.png'
           />
 
-          {/* Open Graph / Facebook Meta Tags*/}
+          {/* Open Graph / Facebook Meta Tags */}
           <meta property='og:type' content='website' />
           <meta property='og:url' content='https://recurringcredit.com/' />
           <meta

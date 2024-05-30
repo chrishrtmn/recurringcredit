@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import ActiveLink from '../../libraries/nav-active-class'
 
 export default function NavPopup({ close }) {
@@ -15,7 +14,7 @@ export default function NavPopup({ close }) {
 
         <a
           className='login'
-          href='https://mysuperportal.com/access/recurringcredit/'
+          href='https://recurringcredit.superportal.site/portal/login'
           target='_blank'
         >
           Login
