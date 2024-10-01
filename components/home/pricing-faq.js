@@ -19,14 +19,11 @@ export default function PricingFaq() {
               <em>(per card)</em>
             </strong>
           </p>
-          {/* <button className='fill' onClick={stripeHandleClick}>
-            Add credit card
-          </button> */}
           <a
             className='button'
-            href='https://buy.stripe.com/8wMbM24cDf086CA9AA'
+            href='#'
           >
-            Add credit card
+            Inactive
           </a>
         </div>
 
