@@ -128,11 +128,13 @@ export default function PricingFaq() {
           color: #fff;
           font-family: 'Roboto', sans-serif;
           font-size: 18px;
-          cursor: pointer;
           box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
           transition: all ease-in-out 0.2s;
           text-decoration: none;
           text-align: center;
+          pointer-events: none;
+          cursor: not-allowed;
+          text-decoration: none;
         }
 
         a.button:hover {
