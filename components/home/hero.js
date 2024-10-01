@@ -131,7 +131,6 @@ export default function Hero() {
           color: #fff;
           font-family: 'Roboto', sans-serif;
           font-size: 18px;
-          cursor: pointer;
           box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
           transition: all ease-in-out 0.2s;
           text-decoration: none;
