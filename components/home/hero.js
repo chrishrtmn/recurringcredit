@@ -20,11 +20,11 @@ export default function Hero() {
               </h2>
 
               <a
-                className='button disabled-link'
-                href="#"
-                onclick="return false;"
+                className='button'
+                href='#'
+                onclick='return false;'
               >
-                Add credit card
+                Inactive
               </a>
             </div>
 
@@ -136,11 +136,7 @@ export default function Hero() {
           transition: all ease-in-out 0.2s;
           text-decoration: none;
           text-align: center;
-        }
-
-        a.disabled-link {
           pointer-events: none;
-          color: gray;
           cursor: not-allowed;
           text-decoration: none;
         }
