@@ -22,6 +22,7 @@ export default function PricingFaq() {
           <a
             className='button'
             href='#'
+            onclick='return false;'
           >
             Inactive
           </a>
