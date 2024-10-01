@@ -19,10 +19,10 @@ export default function Hero() {
                 active and protect your creditworthiness.
               </h2>
 
-              {/* <button onClick={stripeHandleClick}>Add credit card</button> */}
               <a
-                className='button'
-                href='https://buy.stripe.com/8wMbM24cDf086CA9AA'
+                className='button disabled-link'
+                href="#"
+                onclick="return false;"
               >
                 Add credit card
               </a>
@@ -136,6 +136,13 @@ export default function Hero() {
           transition: all ease-in-out 0.2s;
           text-decoration: none;
           text-align: center;
+        }
+
+        a.disabled-link {
+          pointer-events: none;
+          color: gray;
+          cursor: not-allowed;
+          text-decoration: none;
         }
 
         a.button:hover {
